@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecordKeepingApp.MainPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Renters">
+            <MenuFlyoutItem Text="Renter List"
+                            Clicked="OnSecondButtonClicked"
+                            Command="{Binding ExitCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="Locations">
+            <MenuFlyoutSubItem Text="Change Location">
+                <MenuFlyoutItem Text="Redmond, USA"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="Redmond" />
+                <MenuFlyoutItem Text="London, UK"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="London" />
+                <MenuFlyoutItem Text="Berlin, DE"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="Berlin"/>
+            </MenuFlyoutSubItem>
+            <MenuFlyoutSeparator />
+            <MenuFlyoutItem Text="Add Location"
+                            Command="{Binding AddLocationCommand}" />
+            <MenuFlyoutItem Text="Edit Location"
+                            Command="{Binding EditLocationCommand}" />
+            <MenuFlyoutItem Text="Remove Location"
+                            Command="{Binding RemoveLocationCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="View">
+            <MenuFlyoutItem Text="Refresh"
+                            Command="{Binding RefreshCommand}" />
+            <MenuFlyoutItem Text="Change Theme"
+                            Command="{Binding ChangeThemeCommand}" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+
+    <StackLayout Margin="10">
+      
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
+            <Button x:Name="payment"
+                Text="Payment"
+                Clicked="OnPaymentButtonClicked" />
+            <Button x:Name="withdrawl"
+                Text="Withdrawl"
+                Clicked="OnWithdrawlButtonClicked"
+                    BackgroundColor="Gray"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
+            <Label x:Name="primaryEntry" Text="Name: "/>
+            <Entry x:Name="newRecord"
+                   Placeholder="Enter name" 
+                   MaxLength="250"
+                   MinimumWidthRequest="500"
+            />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+            <Label Text="Address: "/>
+            <Entry x:Name="newAddress"
+                   Placeholder="Enter address"
+                   MaxLength="250"
+                   MinimumWidthRequest="500"
+            />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Payment: " x:Name="amountLabel"/>
+            <Entry x:Name="newAmount"
+                   Placeholder="Enter Amount"
+                   MaxLength="250"
+                   MinimumWidthRequest="500"
+            />
+        </StackLayout>
+       
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
+            <Label Text="Start Date: " x:Name="mainDateLabel"/>
+            <DatePicker x:Name="startDate"
+                        MinimumDate="01/01/1996"
+                        MaximumDate="12/31/2026"
+                        Date="06/21/2022"
+                        Format="dd/MM/yyyy"
+            />
+            <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
+                <Label Text="To: "/>
+                <DatePicker x:Name="endDate"
+                            MinimumDate="01/01/1996"
+                            MaximumDate="12/31/2026"
+                            Date="06/21/2022"
+                            Format="dd/MM/yyyy"
+                />
+            </StackLayout>
+        </StackLayout>
+
+        <Button Text="Add Payment Record" x:Name="paymentButton"
+                Clicked="OnAddNewPaymentButtonClicked" />
+
+        <Button Text="Add Withdrawal Record" x:Name="withdrawalButton" IsVisible="false"
+                Clicked="OnAddNewWithdrawalButtonClicked" />
+
+        <Label x:Name="statusMessage"
+           TextColor="{StaticResource Primary}" />
+
+        <Button Text="Get All Recrods"
+            Clicked="OnGetButtonClicked" />
+
+        <CollectionView x:Name="paymentList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*,*,*">
+                        <Label Text="{Binding Id}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding Address}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="3" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="4" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="5" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+        <CollectionView x:Name="withdrawalList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*,*">
+                        <Label Text="{Binding Id}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding Comment}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="3" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="4" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+
+</ContentPage>
