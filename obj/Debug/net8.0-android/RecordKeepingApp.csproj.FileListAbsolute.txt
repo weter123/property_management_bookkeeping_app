@@ -1071,3 +1071,4 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\152\jl\files.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\158\jl\files.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\159\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\RecordKeepingApp.sourcelink.json

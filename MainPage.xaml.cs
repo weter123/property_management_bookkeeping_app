@@ -33,12 +33,12 @@ namespace RecordKeepingApp
             statusMessage.Text = App.RecordRepo.StatusMessage;
         }
         
-        public void OnGetButtonClicked(object sender, EventArgs args)
+        public async void OnGetButtonClicked(object sender, EventArgs args)
         {
             statusMessage.Text = "";
 
-            List<Payment> paymentRecords = App.RecordRepo.GetAllPaymentRecords();
-            List<Withdrawal> withdrawalRecords = App.RecordRepo.GetAllWithdrawalRecords();
+            List<Payment> paymentRecords = await  App.RecordRepo.GetAllPaymentRecords();
+            List<Withdrawal> withdrawalRecords = await App.RecordRepo.GetAllWithdrawalRecords();
             paymentList.ItemsSource = paymentRecords;
             withdrawalList.ItemsSource = withdrawalRecords;
         }

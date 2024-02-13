@@ -14,15 +14,15 @@ namespace RecordKeepingApp.Models
         public string StatusMessage { get; set; }
 
         // TODO: Add variable for the SQLite connection
-        private SQLiteConnection conn;
+        private SQLiteAsyncConnection conn;
         private void Init()
         {
             // TODO: Add code to initialize the repository
             if (conn != null)
                 return;
-            conn = new SQLiteConnection(_dbPath);
-            conn.CreateTable<Payment>();
-            conn.CreateTable<Withdrawal>();
+            conn = new SQLiteAsyncConnection(_dbPath, Constants.Flags);
+            conn.CreateTableAsync<Payment>();
+            conn.CreateTableAsync<Withdrawal>();
         }
 
         public RecordRepository(string dbPath)
@@ -30,7 +30,7 @@ namespace RecordKeepingApp.Models
             _dbPath = dbPath;
         }
 
-        public void AddNewPaymentRecord(string name, string address, int amount, DateTime s, DateTime e)
+        public async void AddNewPaymentRecord(string name, string address, int amount, DateTime s, DateTime e)
         {
             int result = 0;
             try
@@ -43,7 +43,7 @@ namespace RecordKeepingApp.Models
 
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new person into the database
-                result = conn.Insert(new Payment { Name = name, Amount = amount, Address = address, Date = s.ToString("d") + " - " + e.ToString("d"), InsertDate = thisDay });
+                result = await conn.InsertAsync(new Payment { Name = name, Amount = amount, Address = address, Date = s.ToString("d") + " - " + e.ToString("d"), InsertDate = thisDay });
 
                 StatusMessage = string.Format("{0} record(s) added (Name: {1})", result, name);
             }
@@ -54,7 +54,7 @@ namespace RecordKeepingApp.Models
 
         }
 
-        public void AddNewWithdrawalRecord(string name, int amount, DateTime s)
+        public async void AddNewWithdrawalRecord(string name, int amount, DateTime s)
         {
             int result = 0;
             try
@@ -67,7 +67,7 @@ namespace RecordKeepingApp.Models
 
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new person into the database
-                result = conn.Insert(new Withdrawal { Comment = name, Amount = amount, Date = s.ToString("d"), InsertDate = thisDay });
+                result = await conn.InsertAsync(new Withdrawal { Comment = name, Amount = amount, Date = s.ToString("d"), InsertDate = thisDay });
 
                 StatusMessage = string.Format("{0} record(s) added (Comment: {1})", result, name);
             }
@@ -78,13 +78,13 @@ namespace RecordKeepingApp.Models
 
         }
 
-        public List<Payment> GetAllPaymentRecords()
+        public async Task<List<Payment>> GetAllPaymentRecords()
         {
             // TODO: Init then retrieve a list of Person objects from the database into a list
             try
             {
                 Init();
-                return conn.Table<Payment>().ToList();
+                return await conn.Table<Payment>().ToListAsync();
             }
             catch (Exception ex)
             {
@@ -94,13 +94,13 @@ namespace RecordKeepingApp.Models
             return new List<Payment>();
         }
 
-        public List<Withdrawal> GetAllWithdrawalRecords()
+        public async Task<List<Withdrawal>> GetAllWithdrawalRecords()
         {
             // TODO: Init then retrieve a list of Person objects from the database into a list
             try
             {
                 Init();
-                return conn.Table<Withdrawal>().ToList();
+                return await conn.Table<Withdrawal>().ToListAsync();
             }
             catch (Exception ex)
             {

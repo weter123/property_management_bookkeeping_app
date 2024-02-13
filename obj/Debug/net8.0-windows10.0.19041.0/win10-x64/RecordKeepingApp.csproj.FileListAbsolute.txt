@@ -180,3 +180,4 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.sourcelink.json

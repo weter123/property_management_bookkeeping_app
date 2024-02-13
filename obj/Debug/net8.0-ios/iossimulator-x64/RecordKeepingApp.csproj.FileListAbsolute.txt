@@ -314,3 +314,4 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-ios\ios
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-ios\iossimulator-x64\RecordKeepingApp.pdb
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-ios\iossimulator-x64\RecordKeepingApp.genruntimeconfig.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-ios\iossimulator-x64\ref\RecordKeepingApp.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-ios\iossimulator-x64\RecordKeepingApp.sourcelink.json
