@@ -6,11 +6,22 @@ namespace RecordKeepingApp
 {
     public partial class MainPage : ContentPage
     {
-
+        RecordRepository recordsRepository;
         public MainPage()
         {
             InitializeComponent();
+            
+        }
 
+        protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+        {
+            base.OnNavigatedTo(args);
+            List<Payment> records = await App.RecordRepo.GetAllRecords();
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                recordList.ItemsSource = records;
+
+            });
         }
 
         public void OnAddNewPaymentButtonClicked(object sender, EventArgs args)
@@ -37,10 +48,8 @@ namespace RecordKeepingApp
         {
             statusMessage.Text = "";
 
-            List<Payment> paymentRecords = await  App.RecordRepo.GetAllPaymentRecords();
-            List<Withdrawal> withdrawalRecords = await App.RecordRepo.GetAllWithdrawalRecords();
-            paymentList.ItemsSource = paymentRecords;
-            withdrawalList.ItemsSource = withdrawalRecords;
+            List<Payment> paymentRecords = await  App.RecordRepo.GetAllRecords();
+            recordList.ItemsSource = paymentRecords;
         }
 
         async public void OnSecondButtonClicked(object sender, EventArgs e)

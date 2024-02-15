@@ -78,13 +78,19 @@ namespace RecordKeepingApp.Models
 
         }
 
-        public async Task<List<Payment>> GetAllPaymentRecords()
+        public async Task<List<Payment>> GetAllRecords()
         {
             // TODO: Init then retrieve a list of Person objects from the database into a list
             try
             {
                 Init();
-                return await conn.Table<Payment>().ToListAsync();
+                return await conn.QueryAsync<Payment>("" +
+                    "SELECT Name, Address, Amount, Date, InsertDate FROM Payment " +
+                    "Union " +
+                    "SELECT Comment, null, Amount, Date, InsertDate FROM Withdrawal");
+                
+
+               
             }
             catch (Exception ex)
             {
@@ -92,22 +98,6 @@ namespace RecordKeepingApp.Models
             }
 
             return new List<Payment>();
-        }
-
-        public async Task<List<Withdrawal>> GetAllWithdrawalRecords()
-        {
-            // TODO: Init then retrieve a list of Person objects from the database into a list
-            try
-            {
-                Init();
-                return await conn.Table<Withdrawal>().ToListAsync();
-            }
-            catch (Exception ex)
-            {
-                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
-            }
-
-            return new List<Withdrawal>();
         }
     }
 }

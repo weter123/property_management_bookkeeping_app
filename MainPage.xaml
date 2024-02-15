@@ -106,27 +106,12 @@
         <Button Text="Get All Recrods"
             Clicked="OnGetButtonClicked" />
 
-        <CollectionView x:Name="paymentList">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid ColumnDefinitions="*,*,*,*,*,*">
-                        <Label Text="{Binding Id}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="2" Text="{Binding Address}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="3" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="4" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="5" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        
-        <CollectionView x:Name="withdrawalList">
+        <CollectionView x:Name="recordList">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid ColumnDefinitions="*,*,*,*,*">
-                        <Label Text="{Binding Id}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="1" Text="{Binding Comment}" TextColor="{StaticResource Primary}"/>
+                        <Label Text="{Binding Address}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="2" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="3" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="4" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
@@ -134,7 +119,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
     </StackLayout>
 
 </ContentPage>
