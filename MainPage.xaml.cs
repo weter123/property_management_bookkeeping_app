@@ -54,7 +54,7 @@ namespace RecordKeepingApp
 
         async public void OnSecondButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new secondPage());
+            await Navigation.PushAsync(new RentalsPage());
         }
 
         public void OnPaymentButtonClicked(object sender, EventArgs e)

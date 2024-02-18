@@ -23,6 +23,7 @@ namespace RecordKeepingApp.Models
             conn = new SQLiteAsyncConnection(_dbPath, Constants.Flags);
             conn.CreateTableAsync<Payment>();
             conn.CreateTableAsync<Withdrawal>();
+            conn.CreateTableAsync<Property>();
         }
 
         public RecordRepository(string dbPath)

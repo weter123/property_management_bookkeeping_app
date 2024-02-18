@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecordKeepingApp.RentalsPage"
+             Title="RentalsPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Renters">
+            <MenuFlyoutItem Text="Renter List"
+                        Clicked="OnSecondButtonClicked"
+                        Command="{Binding ExitCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="Locations">
+            <MenuFlyoutSubItem Text="Change Location">
+                <MenuFlyoutItem Text="Redmond, USA"
+                            Command="{Binding ChangeLocationCommand}"
+                            CommandParameter="Redmond" />
+                <MenuFlyoutItem Text="London, UK"
+                            Command="{Binding ChangeLocationCommand}"
+                            CommandParameter="London" />
+                <MenuFlyoutItem Text="Berlin, DE"
+                            Command="{Binding ChangeLocationCommand}"
+                            CommandParameter="Berlin"/>
+            </MenuFlyoutSubItem>
+            <MenuFlyoutSeparator />
+            <MenuFlyoutItem Text="Add Location"
+                        Command="{Binding AddLocationCommand}" />
+            <MenuFlyoutItem Text="Edit Location"
+                        Command="{Binding EditLocationCommand}" />
+            <MenuFlyoutItem Text="Remove Location"
+                        Command="{Binding RemoveLocationCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="View">
+            <MenuFlyoutItem Text="Refresh"
+                        Command="{Binding RefreshCommand}" />
+            <MenuFlyoutItem Text="Change Theme"
+                        Command="{Binding ChangeThemeCommand}" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+
+    <StackLayout Margin="10">
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+            <Label Text="Page: "/>
+            <Entry x:Name="page"
+               Placeholder="Enter Page Number"
+               MaxLength="250"
+               MinimumWidthRequest="500"
+            />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Door Number: "/>
+            <Entry x:Name="doorNo"
+               Placeholder="Enter Amount"
+               MaxLength="250"
+               MinimumWidthRequest="500"
+            />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Type: "/>
+            <Entry x:Name="type"
+                Placeholder="Enter Rental Type"
+                MaxLength="250"
+                MinimumWidthRequest="500"
+            />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Renter Name: "/>
+            <Entry x:Name="name"
+                Placeholder="Enter Renter's Name"
+                MaxLength="250"
+                MinimumWidthRequest="500"
+            />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Sequence: "/>
+            <Entry x:Name="sequence"
+                Placeholder="Enter Rental Sequence"
+                MaxLength="250"
+                MinimumWidthRequest="500"
+            />
+        </StackLayout> 
+        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Amount: "/>
+            <Entry x:Name="amount"
+                 Placeholder="Enter Rental Amount"
+                 MaxLength="250"
+                 MinimumWidthRequest="500"
+            />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Phone Number: "/>
+            <Entry x:Name="phone"
+                Placeholder="Enter Phone Number"
+                MaxLength="250"
+                MinimumWidthRequest="500"
+                />
+        </StackLayout>
+
+        <Button Text="Add Rental Property" x:Name="renterButton"
+            Clicked="OnAddNewRentalButtonClicked" />
+
+        <Label x:Name="statusMessage"
+       TextColor="{StaticResource Primary}" />
+
+        <CollectionView x:Name="RentersList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*,*,*,*,*">
+                        <Label Text="{Binding Address}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="3" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="4" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
