@@ -108,15 +108,18 @@
         <Label x:Name="statusMessage"
        TextColor="{StaticResource Primary}" />
 
-        <CollectionView x:Name="RentersList">
+        <CollectionView x:Name="RentalsList">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid ColumnDefinitions="*,*,*,*,*,*,*,*">
-                        <Label Text="{Binding Address}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="2" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="3" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="4" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
+                        <Label Text="{Binding Page}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding DoorNumber}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding Type}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="3" Text="{Binding Renter}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="4" Text="{Binding PropertySequence}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="5" Text="{Binding RentalAmount}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="6" Text="{Binding PhoneNumber}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="7" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

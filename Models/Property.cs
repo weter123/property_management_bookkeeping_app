@@ -26,8 +26,7 @@ namespace RecordKeepingApp.Models
         [MaxLength(500)]
         public string PropertySequence { get; set; }
 
-        [MaxLength(500)]
-        public string RentalAmount { get; set; }
+        public int RentalAmount { get; set; }
 
         [MaxLength(500)]
         public string PhoneNumber { get; set; }

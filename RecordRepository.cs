@@ -100,5 +100,49 @@ namespace RecordKeepingApp.Models
 
             return new List<Payment>();
         }
+
+        public async Task<List<Property>> GetAllProperties()
+        {
+            // TODO: Init then retrieve a list of Person objects from the database into a list
+            try
+            {
+                Init();
+                return await conn.QueryAsync<Property>("" +
+                    "SELECT * FROM Property ");
+
+
+
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+
+            return new List<Property>();
+        }
+
+        public async void AddNewProperty(int page, string doorNo, string type, string renter, string sequence, int amount, string phoneNo)
+        {
+            int result = 0;
+            try
+            {
+                // TODO: Call Init()
+                Init();
+                // basic validation to ensure a name was entered
+                if (string.IsNullOrEmpty(renter))
+                    throw new Exception("Valid name required");
+
+                DateTime thisDay = DateTime.Now;
+                // TODO: Insert the new property into the database
+                result = await conn.InsertAsync(new Property { Page = page, DoorNumber = doorNo, Type = type, Renter = renter, PropertySequence = sequence, RentalAmount = amount, PhoneNumber = phoneNo, InsertDate = thisDay });
+
+                StatusMessage = string.Format("{0} property(s) added (page: {1})", result, page);
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to add {0}. Error: {1}", renter, ex.Message);
+            }
+
+        }
     }
 }
