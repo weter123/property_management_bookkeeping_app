@@ -52,11 +52,6 @@ namespace RecordKeepingApp
             recordList.ItemsSource = paymentRecords;
         }
 
-        async public void OnSecondButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new RentalsPage());
-        }
-
         public void OnPaymentButtonClicked(object sender, EventArgs e)
         {
             payment.BackgroundColor = Color.FromRgb(81, 43, 212);

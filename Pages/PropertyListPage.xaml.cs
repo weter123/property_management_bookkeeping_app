@@ -3,9 +3,9 @@ using RecordKeepingApp.Models;
 namespace RecordKeepingApp
 {
 
-    public partial class RentalsPage : ContentPage
+    public partial class PropertyListPage : ContentPage
     {
-        public RentalsPage()
+        public PropertyListPage()
         {
             InitializeComponent();
         }
@@ -32,9 +32,6 @@ namespace RecordKeepingApp
             statusMessage.Text = App.RecordRepo.StatusMessage;
         }
 
-        async public void OnSecondButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new RentalsPage());
-        }
+       
     }
 }

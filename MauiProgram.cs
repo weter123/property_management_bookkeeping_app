@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Hosting;
 using RecordKeepingApp.Models;
+//using RecordKeepingApp.Service;
 namespace RecordKeepingApp
 {
     public static class MauiProgram
@@ -19,7 +21,6 @@ namespace RecordKeepingApp
             string dbPath = FileAccessHelper.GetLocalFilePath("bookKeepingTest1.db3");
             builder.Services.AddSingleton<RecordRepository>(s => ActivatorUtilities.CreateInstance<RecordRepository>(s, dbPath));
 #endif
-
             return builder.Build();
         }
     }

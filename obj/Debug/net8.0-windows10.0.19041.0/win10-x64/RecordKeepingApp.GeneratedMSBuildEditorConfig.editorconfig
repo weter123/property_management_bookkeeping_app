@@ -24,17 +24,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.AppShell.
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/MainPage.xaml]
+[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Components/NavigationMenuBar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Components.NavigationMenuBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Components\NavigationMenuBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Components\NavigationMenuBar.xaml
 
-[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/RentalsPage.xaml]
+[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Pages/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.RentalsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = RentalsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = RentalsPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Pages.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
+
+[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Pages/PropertyListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Pages.PropertyListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PropertyListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PropertyListPage.xaml
 
 [C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
