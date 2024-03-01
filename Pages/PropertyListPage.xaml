@@ -3,14 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecordKeepingApp.PropertyListPage"
              xmlns:menu ="clr-namespace:RecordKeepingApp.Components"
+             xmlns:model ="clr-namespace:RecordKeepingApp.Models"
+             xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
+             x:DataType="viewModel:PropertyListViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="Property List">
-   
     <StackLayout Margin="10">
         <menu:NavigationMenuBar />
-        
+ 
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
             <Label Text="Page: "/>
             <Entry x:Name="page"
+                   Text="{Binding Page}"
                Placeholder="Enter Page Number"
                MaxLength="250"
                MinimumWidthRequest="500"
@@ -20,6 +24,7 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
             <Label Text="Door Number: "/>
             <Entry x:Name="doorNo"
+                   Text="{Binding DoorNo}"
                Placeholder="Enter Amount"
                MaxLength="250"
                MinimumWidthRequest="500"
@@ -29,6 +34,7 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
             <Label Text="Rental Type: "/>
             <Entry x:Name="type"
+                   Text="{Binding Type}"
                 Placeholder="Enter Rental Type"
                 MaxLength="250"
                 MinimumWidthRequest="500"
@@ -38,6 +44,7 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
             <Label Text="Renter Name: "/>
             <Entry x:Name="name"
+                Text="{Binding Name}"
                 Placeholder="Enter Renter's Name"
                 MaxLength="250"
                 MinimumWidthRequest="500"
@@ -47,6 +54,7 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
             <Label Text="Rental Sequence: "/>
             <Entry x:Name="sequence"
+                Text="{Binding Sequence}"
                 Placeholder="Enter Rental Sequence"
                 MaxLength="250"
                 MinimumWidthRequest="500"
@@ -56,6 +64,7 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
             <Label Text="Rental Amount: "/>
             <Entry x:Name="amount"
+                   Text="{Binding Amount}"
                  Placeholder="Enter Rental Amount"
                  MaxLength="250"
                  MinimumWidthRequest="500"
@@ -65,6 +74,7 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
             <Label Text="Phone Number: "/>
             <Entry x:Name="phone"
+                   Text="{Binding Phone}"
                 Placeholder="Enter Phone Number"
                 MaxLength="250"
                 MinimumWidthRequest="500"
@@ -72,18 +82,22 @@
         </StackLayout>
 
         <Button Text="Add Rental Property" x:Name="renterButton"
-            Clicked="OnAddNewRentalButtonClicked" />
+            Command="{Binding AddNewPropertiesCommand}" />
 
-        <Label x:Name="statusMessage"
+        <Button Text="Get All Properties"
+            Command="{Binding GetPropertiesCommand}"
+                />
+
+        <Label x:Name="statusMessage" Text="{Binding StatusMessage}"
        TextColor="{StaticResource Primary}" />
 
-        <CollectionView x:Name="RentalsList">
+        <CollectionView x:Name="propertyList" ItemsSource="{Binding Properties}">
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="model:Property">
                     <Grid ColumnDefinitions="*,*,*,*,*,*,*,*">
                         <Label Text="{Binding Page}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="1" Text="{Binding DoorNumber}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="2" Text="{Binding Type}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding PropertyType}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="3" Text="{Binding Renter}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="4" Text="{Binding PropertySequence}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="5" Text="{Binding RentalAmount}" TextColor="{StaticResource Primary}"/>

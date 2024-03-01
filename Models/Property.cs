@@ -18,7 +18,7 @@ namespace RecordKeepingApp.Models
         public string DoorNumber { get; set; }
 
         [MaxLength(500)]
-        public string Type { get; set; }
+        public string PropertyType { get; set; }
 
         [MaxLength(500)]
         public string Renter { get; set; }

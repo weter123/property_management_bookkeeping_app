@@ -297,10 +297,11 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccata
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.AssemblyInfo.cs
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.csproj.CoreCompileInputs.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\XamlC.stamp
-C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.csproj.CopyComplete
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\refint\RecordKeepingApp.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.pdb
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.genruntimeconfig.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\RecordKeepingApp.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.sourcelink.json
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKe.EE64911C.Up2Date

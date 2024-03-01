@@ -692,7 +692,6 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\CarouselSpacingItemDecoration.java
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\CarouselViewAdapter_2.java
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\CarouselViewOnScrollListener.java
-C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\CarouselViewwOnGlobalLayoutListener.java
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\CenterSnapHelper.java
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\DataChangeObserver.java
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\EdgeSnapHelper.java
@@ -1072,3 +1071,6 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\158\jl\files.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\159\jl\files.cache
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\RecordKeepingApp.sourcelink.json
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.pdb
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\MauiCarouselRecyclerView_CarouselViewOnGlobalLayoutListener.java

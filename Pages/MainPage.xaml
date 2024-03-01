@@ -2,7 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:menu ="clr-namespace:RecordKeepingApp.Components"
-             x:Class="RecordKeepingApp.MainPage">
+             x:Class="RecordKeepingApp.MainPage"
+             xmlns:model ="clr-namespace:RecordKeepingApp.Models"
+             xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
+             x:DataType="viewModel:MainViewModel">
     <StackLayout Margin="10">
 
         <menu:NavigationMenuBar />
@@ -10,10 +13,10 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
             <Button x:Name="payment"
                 Text="Payment"
-                Clicked="OnPaymentButtonClicked" />
+               />
             <Button x:Name="withdrawl"
                 Text="Withdrawl"
-                Clicked="OnWithdrawlButtonClicked"
+               
                     BackgroundColor="Gray"/>
         </StackLayout>
         
@@ -23,6 +26,7 @@
                    Placeholder="Enter name" 
                    MaxLength="250"
                    MinimumWidthRequest="500"
+                    Text="{Binding Name}"
             />
         </StackLayout>
         
@@ -32,6 +36,7 @@
                    Placeholder="Enter address"
                    MaxLength="250"
                    MinimumWidthRequest="500"
+                    Text="{Binding Address}"
             />
         </StackLayout>
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
@@ -40,6 +45,7 @@
                    Placeholder="Enter Amount"
                    MaxLength="250"
                    MinimumWidthRequest="500"
+                    Text="{Binding Amount}"
             />
         </StackLayout>
        
@@ -50,6 +56,7 @@
                         MaximumDate="12/31/2026"
                         Date="06/21/2022"
                         Format="dd/MM/yyyy"
+                        
             />
             <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
                 <Label Text="To: "/>
@@ -63,25 +70,25 @@
         </StackLayout>
 
         <Button Text="Add Payment Record" x:Name="paymentButton"
-                Clicked="OnAddNewPaymentButtonClicked" />
+                Command="{Binding AddNewPaymentCommand}" />
 
         <Button Text="Add Withdrawal Record" x:Name="withdrawalButton" IsVisible="false"
-                Clicked="OnAddNewWithdrawalButtonClicked" />
+                />
 
         <Label x:Name="statusMessage"
-           TextColor="{StaticResource Primary}" />
+           TextColor="{StaticResource Primary}" Text="{Binding StatusMessage}"/>
 
         <Button Text="Get All Recrods"
-            Clicked="OnGetButtonClicked" />
+            Command="{Binding GetPaymentsCommand}" />
 
-        <CollectionView x:Name="recordList">
+        <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="model:Payment">
                     <Grid ColumnDefinitions="*,*,*,*,*">
-                        <Label Text="{Binding Address}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="1" Text="{Binding Name}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="2" Text="{Binding Amount}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="3" Text="{Binding Date}" TextColor="{StaticResource Primary}"/>
+                        <Label Text="{Binding PayerAddress}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding PayerName}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding PaymentAmount}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="3" Text="{Binding PaymentDate}" TextColor="{StaticResource Primary}"/>
                         <Label Grid.Column="4" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
                     </Grid>
                 </DataTemplate>

@@ -15,16 +15,16 @@ namespace RecordKeepingApp.Models
         public int Id { get; set; }
 
         [MaxLength(500)]
-        public string Name { get; set; }
+        public string PayerName { get; set; }
 
         [MaxLength(250)]
-        public string Address { get; set; }
+        public string PayerAddress { get; set; }
 
         [MaxLength(250)]
-        public int Amount { get; set; }
+        public int PaymentAmount { get; set; }
 
         [MaxLength(250)]
-        public String Date { get; set; }
+        public String PaymentDate { get; set; }
 
         [MaxLength(250)]
         public DateTime InsertDate { get; set; }

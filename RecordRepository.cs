@@ -31,7 +31,7 @@ namespace RecordKeepingApp.Models
             _dbPath = dbPath;
         }
 
-        public async void AddNewPaymentRecord(string name, string address, int amount, DateTime s, DateTime e)
+        public async void AddNewPaymentRecord(string name, string address, int amount, String date)
         {
             int result = 0;
             try
@@ -44,7 +44,7 @@ namespace RecordKeepingApp.Models
 
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new person into the database
-                result = await conn.InsertAsync(new Payment { Name = name, Amount = amount, Address = address, Date = s.ToString("d") + " - " + e.ToString("d"), InsertDate = thisDay });
+                result = await conn.InsertAsync(new Payment { PayerName = name, PaymentAmount = amount, PayerAddress = address, PaymentDate = date , InsertDate = thisDay });
 
                 StatusMessage = string.Format("{0} record(s) added (Name: {1})", result, name);
             }
@@ -68,7 +68,7 @@ namespace RecordKeepingApp.Models
 
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new person into the database
-                result = await conn.InsertAsync(new Withdrawal { Comment = name, Amount = amount, Date = s.ToString("d"), InsertDate = thisDay });
+                result = await conn.InsertAsync(new Withdrawal { WithdrawalComment = name, WithdrawalAmount = amount, WithdrawalDate = s.ToString("d"), InsertDate = thisDay });
 
                 StatusMessage = string.Format("{0} record(s) added (Comment: {1})", result, name);
             }
@@ -86,9 +86,10 @@ namespace RecordKeepingApp.Models
             {
                 Init();
                 return await conn.QueryAsync<Payment>("" +
-                    "SELECT Name, Address, Amount, Date, InsertDate FROM Payment " +
-                    "Union " +
-                    "SELECT Comment, null, Amount, Date, InsertDate FROM Withdrawal");
+                    "SELECT PayerName, PayerAddress, PaymentAmount, PaymentDate, InsertDate FROM Payment ");
+                    //' +
+                    //"Union " +
+                    //"SELECT Comment, null, Amount, Date, InsertDate FROM Withdrawal");
                 
 
                
@@ -134,7 +135,7 @@ namespace RecordKeepingApp.Models
 
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new property into the database
-                result = await conn.InsertAsync(new Property { Page = page, DoorNumber = doorNo, Type = type, Renter = renter, PropertySequence = sequence, RentalAmount = amount, PhoneNumber = phoneNo, InsertDate = thisDay });
+                result = await conn.InsertAsync(new Property { Page = page, DoorNumber = doorNo, PropertyType = type, Renter = renter, PropertySequence = sequence, RentalAmount = amount, PhoneNumber = phoneNo, InsertDate = thisDay });
 
                 StatusMessage = string.Format("{0} property(s) added (page: {1})", result, page);
             }

@@ -4,5 +4,140 @@
         <name>RecordKeepingApp</name>
     </assembly>
     <members>
+        <member name="T:RecordKeepingApp.ViewModels.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.BaseViewModel.StatusMessage">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.BaseViewModel.statusMessage"/>
+        </member>
+        <member name="T:RecordKeepingApp.ViewModels.MainViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Amount">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.amount"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Name">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.name"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Address">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.address"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.StartDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.startDate"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.EndDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.endDate"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.FinalDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.finalDate"/>
+        </member>
+        <member name="T:RecordKeepingApp.ViewModels.PropertyListViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Page">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.page"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Amount">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.amount"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.DoorNo">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.doorNo"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Type">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.type"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Name">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.name"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Sequence">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.sequence"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Phone">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.phone"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StatusMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StatusMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Amount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Amount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.StartDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "StartDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EndDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EndDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FinalDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FinalDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Page">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Page" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DoorNo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DoorNo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Type">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Type" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Sequence">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Sequence" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Phone">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Phone" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StatusMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StatusMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Amount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Amount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.StartDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "StartDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EndDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EndDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FinalDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FinalDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Page">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Page" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DoorNo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DoorNo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Type">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Type" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Sequence">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Sequence" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Phone">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Phone" generated properties.</summary>
+        </member>
     </members>
 </doc>

@@ -14,13 +14,13 @@ namespace RecordKeepingApp.Models
         public int Id { get; set; }
 
         [MaxLength(500)]
-        public string Comment { get; set; }
+        public string WithdrawalComment { get; set; }
 
         [MaxLength(250)]
-        public int Amount { get; set; }
+        public int WithdrawalAmount { get; set; }
 
         [MaxLength(250)]
-        public String Date { get; set; }
+        public String WithdrawalDate { get; set; }
 
         [MaxLength(250)]
         public DateTime InsertDate { get; set; }

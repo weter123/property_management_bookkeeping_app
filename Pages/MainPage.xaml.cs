@@ -1,18 +1,20 @@
 ﻿
 using RecordKeepingApp.Models;
+using RecordKeepingApp.ViewModels;
 
 
 namespace RecordKeepingApp
 {
     public partial class MainPage : ContentPage
     {
-        RecordRepository recordsRepository;
-        public MainPage()
+        private readonly MainViewModel vm;
+        public MainPage(MainViewModel mainViewModel)
         {
             InitializeComponent();
-            
-        }
+            BindingContext = vm = mainViewModel;
 
+        }
+        /*
         protected override async void OnNavigatedTo(NavigatedToEventArgs args)
         {
             base.OnNavigatedTo(args);
@@ -33,12 +35,11 @@ namespace RecordKeepingApp
             App.RecordRepo.AddNewPaymentRecord(newRecord.Text, newAddress.Text, i, startDate.Date, endDate.Date);
             statusMessage.Text = App.RecordRepo.StatusMessage;
         }
-
+        
         public void OnAddNewWithdrawalButtonClicked(object sender, EventArgs args)
         {
             statusMessage.Text = "";
-            int i;
-            int.TryParse(newAmount.Text, out i);
+            _ = int.TryParse(newAmount.Text, out int i);
 
             App.RecordRepo.AddNewWithdrawalRecord(newRecord.Text,  i, startDate.Date);
             statusMessage.Text = App.RecordRepo.StatusMessage;
@@ -51,7 +52,7 @@ namespace RecordKeepingApp
             List<Payment> paymentRecords = await  App.RecordRepo.GetAllRecords();
             recordList.ItemsSource = paymentRecords;
         }
-
+        
         public void OnPaymentButtonClicked(object sender, EventArgs e)
         {
             payment.BackgroundColor = Color.FromRgb(81, 43, 212);
@@ -77,5 +78,6 @@ namespace RecordKeepingApp
             paymentButton.IsVisible = false;
             withdrawalButton.IsVisible = true;
         }
+        */
     }
 }

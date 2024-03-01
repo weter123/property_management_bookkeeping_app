@@ -1,37 +1,49 @@
 
 using RecordKeepingApp.Models;
+using RecordKeepingApp.ViewModels;
 namespace RecordKeepingApp
 {
 
     public partial class PropertyListPage : ContentPage
     {
-        public PropertyListPage()
+        private readonly PropertyListViewModel vm;
+        public PropertyListPage(PropertyListViewModel propertyListViewModel)
         {
             InitializeComponent();
+            BindingContext = vm = propertyListViewModel;
+
         }
 
-        protected override async void OnNavigatedTo(NavigatedToEventArgs args)
+        /*
+        protected async void OnNavigatedTo(NavigatedToEventArgs args)
         {
             base.OnNavigatedTo(args);
             List<Property> properties = await App.RecordRepo.GetAllProperties();
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                RentalsList.ItemsSource = properties;
+                propertyList.ItemsSource = properties;
 
             });
         }
-
+        
         public void OnAddNewRentalButtonClicked(object sender, EventArgs args)
         {
             statusMessage.Text = "";
-            int p;
-            int.TryParse(page.Text, out p);
-            int i;
-            int.TryParse(amount.Text, out i);
+            _ = int.TryParse(page.Text, out int p);
+            _ = int.TryParse(amount.Text, out int i);
             App.RecordRepo.AddNewProperty(p, doorNo.Text, type.Text, name.Text, sequence.Text, i, phone.Text);
             statusMessage.Text = App.RecordRepo.StatusMessage;
         }
 
-       
+        public async void OnGetButtonClicked(object sender, EventArgs args)
+        {
+            statusMessage.Text = "";
+
+            List<Property> properties = await App.RecordRepo.GetAllProperties();
+            propertyList.ItemsSource = properties;
+        }
+        */
+
+
     }
 }
