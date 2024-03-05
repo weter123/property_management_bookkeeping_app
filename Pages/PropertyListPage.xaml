@@ -84,10 +84,6 @@
         <Button Text="Add Rental Property" x:Name="renterButton"
             Command="{Binding AddNewPropertiesCommand}" />
 
-        <Button Text="Get All Properties"
-            Command="{Binding GetPropertiesCommand}"
-                />
-
         <Label x:Name="statusMessage" Text="{Binding StatusMessage}"
        TextColor="{StaticResource Primary}" />
 

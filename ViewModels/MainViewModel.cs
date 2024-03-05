@@ -16,8 +16,11 @@ namespace RecordKeepingApp.ViewModels
     {
         public ObservableCollection<Payment> Payments { get; } = new();
 
+        public ObservableCollection<int> PropertyIds { get; } = new();
+
         public Command GetPaymentsCommand { get; }
         public Command AddNewPaymentCommand { get; }
+        public Command GetPropertyIdsCommand { get; }
 
         RecordRepository recordRepository;
 
@@ -39,18 +42,25 @@ namespace RecordKeepingApp.ViewModels
         [ObservableProperty]
         String finalDate;
 
+        [ObservableProperty]
+        List<int> pages;
+
+        [ObservableProperty]
+        int selectedItem;
+
         public MainViewModel(RecordRepository repo)
         {
             this.recordRepository = repo;
-            GetPaymentsCommand = new Command(async () => await GetAllPaymentsAysnc());
-            AddNewPaymentCommand = new Command(async () => await AddNewPropertyAsync());
+            GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
+            AddNewPaymentCommand = new Command(async () => await AddNewPaymentAsync());
+            GetPropertyIdsCommand = new Command(async () => await GetAllPropertyIdsAsync());
         }
 
-        async Task GetAllPaymentsAysnc()
+        async Task GetAllPaymentsAsync()
         {
             try
             {
-                StatusMessage = "Got All";
+                StatusMessage = "";
                 List<Payment> payments = await App.RecordRepo.GetAllRecords();
                 if (Payments.Count != 0)
                     {
@@ -68,8 +78,7 @@ namespace RecordKeepingApp.ViewModels
                 //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
             }
         }
-
-        async Task AddNewPropertyAsync()
+        async Task AddNewPaymentAsync()
         {
 
             try
@@ -80,7 +89,7 @@ namespace RecordKeepingApp.ViewModels
                 FinalDate = StartDate.ToString("d") + " - " + EndDate.ToString("d");
                 App.RecordRepo.AddNewPaymentRecord(Name, Address, i, FinalDate);
                 
-                await GetAllPaymentsAysnc();
+                await GetAllPaymentsAsync();
 
                 StatusMessage = App.RecordRepo.StatusMessage;
 
@@ -90,6 +99,36 @@ namespace RecordKeepingApp.ViewModels
                 Debug.WriteLine($"unable to add payment: {ex.Message}");
                 //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
             }
+        }
+
+        async Task GetAllPropertyIdsAsync()
+        {
+            try
+            {
+                StatusMessage = "";
+                List<Property> pages = await App.RecordRepo.GetAllPropertyIds();
+                if (PropertyIds.Count != 0)
+                {
+                    PropertyIds.Clear();
+                }
+
+                foreach (Property page in pages)
+                {
+                    PropertyIds.Add(page.Page);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"unable to get properties: {ex.Message}");
+                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+            }
+        }
+
+        public async Task LoadAsync()
+        {
+            await GetAllPaymentsAsync();
+            await GetAllPropertyIdsAsync();
         }
     }
     

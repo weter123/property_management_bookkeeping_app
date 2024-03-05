@@ -2,6 +2,7 @@
 using Microsoft.Maui.Hosting;
 using RecordKeepingApp.Models;
 using RecordKeepingApp.ViewModels;
+using CommunityToolkit.Maui;
 //using RecordKeepingApp.Service;
 namespace RecordKeepingApp
 {
@@ -12,6 +13,7 @@ namespace RecordKeepingApp
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

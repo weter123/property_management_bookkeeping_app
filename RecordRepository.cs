@@ -21,8 +21,6 @@ namespace RecordKeepingApp.Models
             if (conn != null)
                 return;
             conn = new SQLiteAsyncConnection(_dbPath, Constants.Flags);
-            conn.CreateTableAsync<Payment>();
-            conn.CreateTableAsync<Withdrawal>();
             conn.CreateTableAsync<Property>();
         }
 
@@ -41,6 +39,8 @@ namespace RecordKeepingApp.Models
                 // basic validation to ensure a name was entered
                 if (string.IsNullOrEmpty(name) )
                     throw new Exception("Valid name required");
+                if (string.IsNullOrEmpty(address))
+                    throw new Exception("Valid address required");
 
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new person into the database
@@ -55,44 +55,13 @@ namespace RecordKeepingApp.Models
 
         }
 
-        public async void AddNewWithdrawalRecord(string name, int amount, DateTime s)
-        {
-            int result = 0;
-            try
-            {
-                // TODO: Call Init()
-                Init();
-                // basic validation to ensure a name was entered
-                if (string.IsNullOrEmpty(name))
-                    throw new Exception("Valid name required");
-
-                DateTime thisDay = DateTime.Now;
-                // TODO: Insert the new person into the database
-                result = await conn.InsertAsync(new Withdrawal { WithdrawalComment = name, WithdrawalAmount = amount, WithdrawalDate = s.ToString("d"), InsertDate = thisDay });
-
-                StatusMessage = string.Format("{0} record(s) added (Comment: {1})", result, name);
-            }
-            catch (Exception ex)
-            {
-                StatusMessage = string.Format("Failed to add {0}. Error: {1}", name, ex.Message);
-            }
-
-        }
-
         public async Task<List<Payment>> GetAllRecords()
         {
-            // TODO: Init then retrieve a list of Person objects from the database into a list
             try
             {
                 Init();
                 return await conn.QueryAsync<Payment>("" +
-                    "SELECT PayerName, PayerAddress, PaymentAmount, PaymentDate, InsertDate FROM Payment ");
-                    //' +
-                    //"Union " +
-                    //"SELECT Comment, null, Amount, Date, InsertDate FROM Withdrawal");
-                
-
-               
+                    "SELECT PayerName, PayerAddress, PaymentAmount, PaymentDate, InsertDate FROM Payment ");      
             }
             catch (Exception ex)
             {
@@ -144,6 +113,21 @@ namespace RecordKeepingApp.Models
                 StatusMessage = string.Format("Failed to add {0}. Error: {1}", renter, ex.Message);
             }
 
+        }
+
+        public async Task<List<Property>> GetAllPropertyIds()
+        {
+            Init();
+            try
+            {
+                return await conn.QueryAsync<Property>("" +
+                    "SELECT page FROM Property ");
+
+            } catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to get property Ids. Error: {0}", ex.Message);
+            }
+            return new List<Property> {};
         }
     }
 }

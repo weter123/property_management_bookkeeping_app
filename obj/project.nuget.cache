@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "c0vjBfFqGlmBP76YIbJs4cUkdV3F3j/rNHTvUrUzJeKAd23muhdj+0PAE3ax30iryqCl7jR89pF6yRD9VL4TdQ==",
+  "dgSpecHash": "mEcC48caeLMo8bO2TDb5Q657OwjBUha60lzkreMwae9rmE1Xv/oX8t06i0gKOmD+B8pJZr/Bftv+oNWdTYcMbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordKeepingApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\repex\\.nuget\\packages\\communitytoolkit.maui\\7.0.1\\communitytoolkit.maui.7.0.1.nupkg.sha512",
+    "C:\\Users\\repex\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.1\\communitytoolkit.maui.core.7.0.1.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -40,6 +42,7 @@
     "C:\\Users\\repex\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+    "C:\\Users\\repex\\.nuget\\packages\\system.speech\\8.0.0-rc.2.23479.6\\system.speech.8.0.0-rc.2.23479.6.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\repex\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",

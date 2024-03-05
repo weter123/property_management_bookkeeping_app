@@ -182,3 +182,6 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.sourcelink.json
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKe.EE64911C.Up2Date
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Speech.dll

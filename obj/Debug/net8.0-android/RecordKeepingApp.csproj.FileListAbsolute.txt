@@ -1074,3 +1074,16 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.pdb
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\android\src\crc645d80431ce5f73f11\MauiCarouselRecyclerView_CarouselViewOnGlobalLayoutListener.java
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\98\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\101\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\102\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\109\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\114\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\115\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\120\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\121\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\124\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\149\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\154\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\160\jl\files.cache
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-android\lp\161\jl\files.cache

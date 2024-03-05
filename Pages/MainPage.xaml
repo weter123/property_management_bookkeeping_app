@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:menu ="clr-namespace:RecordKeepingApp.Components"
+			 xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="RecordKeepingApp.MainPage"
              xmlns:model ="clr-namespace:RecordKeepingApp.Models"
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
@@ -10,15 +11,7 @@
 
         <menu:NavigationMenuBar />
 
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
-            <Button x:Name="payment"
-                Text="Payment"
-               />
-            <Button x:Name="withdrawl"
-                Text="Withdrawl"
-               
-                    BackgroundColor="Gray"/>
-        </StackLayout>
+		
         
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
             <Label x:Name="primaryEntry" Text="Name: "/>
@@ -29,6 +22,14 @@
                     Text="{Binding Name}"
             />
         </StackLayout>
+
+		<StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
+			<Label x:Name="page" Text="Page: "/>
+			<Picker
+				x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">
+				
+			</Picker>
+		</StackLayout>
         
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
             <Label Text="Address: "/>
@@ -77,9 +78,6 @@
 
         <Label x:Name="statusMessage"
            TextColor="{StaticResource Primary}" Text="{Binding StatusMessage}"/>
-
-        <Button Text="Get All Recrods"
-            Command="{Binding GetPaymentsCommand}" />
 
         <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
             <CollectionView.ItemTemplate>

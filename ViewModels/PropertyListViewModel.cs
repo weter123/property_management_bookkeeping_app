@@ -49,11 +49,9 @@ namespace RecordKeepingApp.ViewModels
         }
 
         async Task GetAllPropertiesAsync()
-        {
-           
+        {        
             try
             {
-               
                 StatusMessage = "got all";
                 List<Property> properties = await App.RecordRepo.GetAllProperties();
 
@@ -93,6 +91,11 @@ namespace RecordKeepingApp.ViewModels
                 Debug.WriteLine($"unable to get add propert: {ex.Message}");
                 //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
             }
+        }
+
+        public async Task LoadAsync()
+        {
+            await GetAllPropertiesAsync();
         }
     }
 }
