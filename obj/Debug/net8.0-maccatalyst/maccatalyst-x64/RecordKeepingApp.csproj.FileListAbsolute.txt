@@ -305,3 +305,5 @@ C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccata
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKeepingApp.sourcelink.json
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
 C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\RecordKe.EE64911C.Up2Date
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll

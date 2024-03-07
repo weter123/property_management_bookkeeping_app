@@ -11,10 +11,21 @@
 
         <menu:NavigationMenuBar />
 
-		
-        
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
+            <Label x:Name="primaryEntry" Text="Page: "/>
+            <Picker
+		x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">
+                <Picker.Behaviors>
+                    <toolkit:EventToCommandBehavior
+            EventName="SelectedIndexChanged"
+            Command="{Binding GetSelectedPropertyCommand}"
+/>
+                </Picker.Behaviors>
+            </Picker>
+        </StackLayout>
+
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
-            <Label x:Name="primaryEntry" Text="Name: "/>
+            <Label x:Name="name" Text="Name: "/>
             <Entry x:Name="newRecord"
                    Placeholder="Enter name" 
                    MaxLength="250"
@@ -23,18 +34,10 @@
             />
         </StackLayout>
 
-		<StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
-			<Label x:Name="page" Text="Page: "/>
-			<Picker
-				x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">
-				
-			</Picker>
-		</StackLayout>
-        
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
-            <Label Text="Address: "/>
-            <Entry x:Name="newAddress"
-                   Placeholder="Enter address"
+            <Label Text="Door Number: "/>
+            <Entry x:Name="newDoorNo"
+                   Placeholder="Enter Door Number"
                    MaxLength="250"
                    MinimumWidthRequest="500"
                     Text="{Binding Address}"
@@ -73,21 +76,18 @@
         <Button Text="Add Payment Record" x:Name="paymentButton"
                 Command="{Binding AddNewPaymentCommand}" />
 
-        <Button Text="Add Withdrawal Record" x:Name="withdrawalButton" IsVisible="false"
-                />
-
         <Label x:Name="statusMessage"
            TextColor="{StaticResource Primary}" Text="{Binding StatusMessage}"/>
 
-        <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
+        <CollectionView x:Name="recordList" ItemsSource="{Binding Transactions}">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:Payment">
+                <DataTemplate x:DataType="model:PaymentProperty">
                     <Grid ColumnDefinitions="*,*,*,*,*">
-                        <Label Text="{Binding PayerAddress}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="1" Text="{Binding PayerName}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="2" Text="{Binding PaymentAmount}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="3" Text="{Binding PaymentDate}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="4" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
+                        <Label Text="{Binding AddressColumn}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding NameColumn}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding AmountColumn}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="3" Text="{Binding PaymentDateColumn}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="4" Text="{Binding InsertDateColumn}" TextColor="{StaticResource Primary}"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

@@ -22,6 +22,7 @@ namespace RecordKeepingApp.Models
                 return;
             conn = new SQLiteAsyncConnection(_dbPath, Constants.Flags);
             conn.CreateTableAsync<Property>();
+            conn.CreateTableAsync<Payment>();
         }
 
         public RecordRepository(string dbPath)
@@ -29,28 +30,23 @@ namespace RecordKeepingApp.Models
             _dbPath = dbPath;
         }
 
-        public async void AddNewPaymentRecord(string name, string address, int amount, String date)
+        public async void AddNewPaymentRecord(int page, int amount, String date)
         {
-            int result = 0;
+
             try
             {
                 // TODO: Call Init()
                 Init();
-                // basic validation to ensure a name was entered
-                if (string.IsNullOrEmpty(name) )
-                    throw new Exception("Valid name required");
-                if (string.IsNullOrEmpty(address))
-                    throw new Exception("Valid address required");
-
+               
                 DateTime thisDay = DateTime.Now;
                 // TODO: Insert the new person into the database
-                result = await conn.InsertAsync(new Payment { PayerName = name, PaymentAmount = amount, PayerAddress = address, PaymentDate = date , InsertDate = thisDay });
+                await conn.InsertAsync(new Payment { PropertyPage = page , PaymentAmount = amount, PaymentDate = date , InsertDate = thisDay });
 
-                StatusMessage = string.Format("{0} record(s) added (Name: {1})", result, name);
+                StatusMessage = string.Format("a record has been added (Page: {0})", page);
             }
             catch (Exception ex)
             {
-                StatusMessage = string.Format("Failed to add {0}. Error: {1}", name, ex.Message);
+                StatusMessage = string.Format("Failed to add {0}. Error: {1}", page, ex.Message);
             }
 
         }
@@ -69,6 +65,26 @@ namespace RecordKeepingApp.Models
             }
 
             return new List<Payment>();
+        }
+
+        public async Task<List<PaymentProperty>> GetAllPayments()
+        {
+            try
+            {
+                Init();
+                return await conn.QueryAsync<PaymentProperty>("" +
+                    "SELECT pr.Renter AS NameColumn, pr.DoorNumber AS AddressColumn , pa.PaymentAmount AS AmountColumn, " +
+                    "pa.PaymentDate AS PaymentDateColumn, pa.InsertDate AS InsertDateColumn  " +
+                    "FROM Payment pa " +
+                    "INNER JOIN Property pr " +
+                    "ON pa.PropertyPage = pr.Page");
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+
+            return new List<PaymentProperty>();
         }
 
         public async Task<List<Property>> GetAllProperties()
@@ -114,7 +130,7 @@ namespace RecordKeepingApp.Models
             }
 
         }
-
+/*
         public async Task<List<Property>> GetAllPropertyIds()
         {
             Init();
@@ -128,6 +144,23 @@ namespace RecordKeepingApp.Models
                 StatusMessage = string.Format("Failed to get property Ids. Error: {0}", ex.Message);
             }
             return new List<Property> {};
+        }
+*/
+        public async Task<Property> GetOneProperty(int pageId)
+        {
+            Init();
+            try
+            {
+                return await conn.FindWithQueryAsync<Property>("" +
+                    "SELECT * FROM Property " +
+                    "WHERE Page =" + pageId);
+
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to find {0}. Error: {1}", pageId, ex.Message);
+            }
+            return new Property { };
         }
     }
 }

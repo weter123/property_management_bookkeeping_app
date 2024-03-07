@@ -22,7 +22,7 @@ namespace RecordKeepingApp
 
 #if DEBUG
             
-            string dbPath = FileAccessHelper.GetLocalFilePath("bookKeepingTest4.db3");
+            string dbPath = FileAccessHelper.GetLocalFilePath("bookKeepingTest5.db3");
             builder.Services.AddSingleton<RecordRepository>(s => ActivatorUtilities.CreateInstance<RecordRepository>(s, dbPath));
 
             builder.Services.AddSingleton<MainPage>();

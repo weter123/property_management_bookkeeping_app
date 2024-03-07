@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using static Microsoft.Maui.ApplicationModel.Permissions;
 using System.Xml.Linq;
 using CommunityToolkit.Mvvm.ComponentModel;
+using System.Transactions;
 
 namespace RecordKeepingApp.ViewModels
 {
@@ -16,11 +17,14 @@ namespace RecordKeepingApp.ViewModels
     {
         public ObservableCollection<Payment> Payments { get; } = new();
 
+        public ObservableCollection<PaymentProperty> Transactions { get; } = new();
+
         public ObservableCollection<int> PropertyIds { get; } = new();
 
         public Command GetPaymentsCommand { get; }
         public Command AddNewPaymentCommand { get; }
         public Command GetPropertyIdsCommand { get; }
+        public Command GetSelectedPropertyCommand { get; }
 
         RecordRepository recordRepository;
 
@@ -54,6 +58,7 @@ namespace RecordKeepingApp.ViewModels
             GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
             AddNewPaymentCommand = new Command(async () => await AddNewPaymentAsync());
             GetPropertyIdsCommand = new Command(async () => await GetAllPropertyIdsAsync());
+            GetSelectedPropertyCommand = new Command(async () => await GetPropertyAsync(selectedItem));
         }
 
         async Task GetAllPaymentsAsync()
@@ -61,15 +66,16 @@ namespace RecordKeepingApp.ViewModels
             try
             {
                 StatusMessage = "";
-                List<Payment> payments = await App.RecordRepo.GetAllRecords();
-                if (Payments.Count != 0)
+                //List<Payment> payments = await App.RecordRepo.GetAllRecords();
+                List<PaymentProperty> payments = await App.RecordRepo.GetAllPayments();
+                if (Transactions.Count != 0)
                     {
-                        Payments.Clear();
+                        Transactions.Clear();
                     }
 
-                foreach (Payment payment in payments)
+                foreach (PaymentProperty payment in payments)
                 {
-                    Payments.Add(payment);
+                    Transactions.Add(payment);
                 }
             }
             catch (Exception ex)
@@ -87,7 +93,7 @@ namespace RecordKeepingApp.ViewModels
                 int.TryParse(Amount, out int i);
 
                 FinalDate = StartDate.ToString("d") + " - " + EndDate.ToString("d");
-                App.RecordRepo.AddNewPaymentRecord(Name, Address, i, FinalDate);
+                App.RecordRepo.AddNewPaymentRecord(SelectedItem, i, FinalDate);
                 
                 await GetAllPaymentsAsync();
 
@@ -106,7 +112,7 @@ namespace RecordKeepingApp.ViewModels
             try
             {
                 StatusMessage = "";
-                List<Property> pages = await App.RecordRepo.GetAllPropertyIds();
+                List<Property> pages = await App.RecordRepo.GetAllProperties();
                 if (PropertyIds.Count != 0)
                 {
                     PropertyIds.Clear();
@@ -116,6 +122,24 @@ namespace RecordKeepingApp.ViewModels
                 {
                     PropertyIds.Add(page.Page);
                 }
+            }
+
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"unable to get properties: {ex.Message}");
+                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+            }
+        }
+
+        async Task GetPropertyAsync(int pageId)
+        {
+            try
+            {
+                StatusMessage = "";
+                Property property= await App.RecordRepo.GetOneProperty(pageId);
+                Name = property.Renter;
+                Address = property.DoorNumber;
+                StatusMessage = string.Format("Found page {0}. Renter's name: {1}", pageId, property.Renter);
             }
 
             catch (Exception ex)

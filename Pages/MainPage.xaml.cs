@@ -31,14 +31,7 @@ namespace RecordKeepingApp
             });
         }
 
-        <Picker.Behaviors>
-					<toolkit:EventToCommandBehavior
-                    EventName="SelectedIndexChanged"
-                    Command="{Binding GetSelectedPropertyCommand}"
-                    EventArgsConverter="{StaticResource SelectedItemEventArgsConverter}"
-                    CommandParameter="{ Binding .}"
-                />
-				</Picker.Behaviors>
+        
         */
     }
 }
