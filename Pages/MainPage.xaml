@@ -7,91 +7,84 @@
              xmlns:model ="clr-namespace:RecordKeepingApp.Models"
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:MainViewModel">
-    <StackLayout Margin="10">
-
-        <menu:NavigationMenuBar />
-
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
-            <Label x:Name="primaryEntry" Text="Page: "/>
-            <Picker
+    <ScrollView Margin="20">
+        <StackLayout Margin="10">
+            <menu:NavigationMenuBar />
+            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
+                <Label x:Name="primaryEntry" Text="Page: "/>
+                <Picker
 		x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">
-                <Picker.Behaviors>
-                    <toolkit:EventToCommandBehavior
+                    <Picker.Behaviors>
+                        <toolkit:EventToCommandBehavior
             EventName="SelectedIndexChanged"
             Command="{Binding GetSelectedPropertyCommand}"
 />
-                </Picker.Behaviors>
-            </Picker>
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
-            <Label x:Name="name" Text="Name: "/>
-            <Entry x:Name="newRecord"
+                    </Picker.Behaviors>
+                </Picker>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
+                <Label x:Name="name" Text="Name: "/>
+                <Entry x:Name="newRecord"
                    Placeholder="Enter name" 
                    MaxLength="250"
                    MinimumWidthRequest="500"
                     Text="{Binding Name}"
             />
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
-            <Label Text="Door Number: "/>
-            <Entry x:Name="newDoorNo"
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+                <Label Text="Door Number: "/>
+                <Entry x:Name="newDoorNo"
                    Placeholder="Enter Door Number"
                    MaxLength="250"
                    MinimumWidthRequest="500"
                     Text="{Binding Address}"
             />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-            <Label Text="Payment: " x:Name="amountLabel"/>
-            <Entry x:Name="newAmount"
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                <Label Text="Payment: " x:Name="amountLabel"/>
+                <Entry x:Name="newAmount"
                    Placeholder="Enter Amount"
                    MaxLength="250"
                    MinimumWidthRequest="500"
                     Text="{Binding Amount}"
             />
-        </StackLayout>
-       
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
-            <Label Text="Start Date: " x:Name="mainDateLabel"/>
-            <DatePicker x:Name="startDate"
-                        MinimumDate="01/01/1996"
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
+                <Label Text="Start Date: " x:Name="mainDateLabel"/>
+                <DatePicker x:Name="startDate"
+                        MinimumDate="01/01/2024"
                         MaximumDate="12/31/2026"
-                        Date="06/21/2022"
+                        Date="{Binding StartDate}"
                         Format="dd/MM/yyyy"
                         
             />
-            <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
-                <Label Text="To: "/>
-                <DatePicker x:Name="endDate"
-                            MinimumDate="01/01/1996"
+                <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
+                    <Label Text="To: "/>
+                    <DatePicker x:Name="endDate"
+                            MinimumDate="01/01/2024"
                             MaximumDate="12/31/2026"
-                            Date="06/21/2022"
+                            Date="{Binding EndDate}"
                             Format="dd/MM/yyyy"
                 />
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-
-        <Button Text="Add Payment Record" x:Name="paymentButton"
+            <Button Text="Add Payment Record" x:Name="paymentButton"
                 Command="{Binding AddNewPaymentCommand}" />
-
-        <Label x:Name="statusMessage"
+            <Label x:Name="statusMessage"
            TextColor="{StaticResource Primary}" Text="{Binding StatusMessage}"/>
-
-        <CollectionView x:Name="recordList" ItemsSource="{Binding Transactions}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:PaymentProperty">
-                    <Grid ColumnDefinitions="*,*,*,*,*">
-                        <Label Text="{Binding AddressColumn}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="1" Text="{Binding NameColumn}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="2" Text="{Binding AmountColumn}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="3" Text="{Binding PaymentDateColumn}" TextColor="{StaticResource Primary}"/>
-                        <Label Grid.Column="4" Text="{Binding InsertDateColumn}" TextColor="{StaticResource Primary}"/>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </StackLayout>
-
+            <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:PaymentProperty">
+                        <Grid ColumnDefinitions="*,*,*,*,*">
+                            <Label Text="{Binding AddressColumn}" TextColor="{StaticResource Primary}"/>
+                            <Label Grid.Column="1" Text="{Binding NameColumn}" TextColor="{StaticResource Primary}"/>
+                            <Label Grid.Column="2" Text="{Binding AmountColumn}" TextColor="{StaticResource Primary}"/>
+                            <Label Grid.Column="3" Text="{Binding PaymentDateColumn}" TextColor="{StaticResource Primary}"/>
+                            <Label Grid.Column="4" Text="{Binding InsertDateColumn}" TextColor="{StaticResource Primary}"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

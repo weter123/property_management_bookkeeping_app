@@ -18,8 +18,6 @@ namespace RecordKeepingApp.ViewModels
         public Command GetPropertiesCommand { get; }
         public Command AddNewPropertiesCommand { get; }
 
-        RecordRepository recordRepository;
-
         [ObservableProperty]
         string page;
 
@@ -42,8 +40,8 @@ namespace RecordKeepingApp.ViewModels
         string phone;
 
 
-        public PropertyListViewModel(RecordRepository repo) {
-            this.recordRepository = repo;
+        public PropertyListViewModel() {
+
             GetPropertiesCommand = new Command(async () => await GetAllPropertiesAsync());
             AddNewPropertiesCommand = new Command(async () => await AddNewPropertyAsync());
         }

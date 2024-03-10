@@ -15,9 +15,7 @@ namespace RecordKeepingApp.ViewModels
 {
     public partial class MainViewModel : BaseViewModel
     {
-        public ObservableCollection<Payment> Payments { get; } = new();
-
-        public ObservableCollection<PaymentProperty> Transactions { get; } = new();
+        public ObservableCollection<PaymentProperty> Payments { get; } = new();
 
         public ObservableCollection<int> PropertyIds { get; } = new();
 
@@ -25,8 +23,6 @@ namespace RecordKeepingApp.ViewModels
         public Command AddNewPaymentCommand { get; }
         public Command GetPropertyIdsCommand { get; }
         public Command GetSelectedPropertyCommand { get; }
-
-        RecordRepository recordRepository;
 
         [ObservableProperty]
         string amount;
@@ -52,9 +48,9 @@ namespace RecordKeepingApp.ViewModels
         [ObservableProperty]
         int selectedItem;
 
-        public MainViewModel(RecordRepository repo)
+        public MainViewModel()
         {
-            this.recordRepository = repo;
+            
             GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
             AddNewPaymentCommand = new Command(async () => await AddNewPaymentAsync());
             GetPropertyIdsCommand = new Command(async () => await GetAllPropertyIdsAsync());
@@ -68,14 +64,14 @@ namespace RecordKeepingApp.ViewModels
                 StatusMessage = "";
                 //List<Payment> payments = await App.RecordRepo.GetAllRecords();
                 List<PaymentProperty> payments = await App.RecordRepo.GetAllPayments();
-                if (Transactions.Count != 0)
-                    {
-                        Transactions.Clear();
-                    }
+                if (Payments.Count != 0)
+                {
+                    Payments.Clear();
+                }
 
                 foreach (PaymentProperty payment in payments)
                 {
-                    Transactions.Add(payment);
+                    Payments.Add(payment);
                 }
             }
             catch (Exception ex)
@@ -94,7 +90,7 @@ namespace RecordKeepingApp.ViewModels
 
                 FinalDate = StartDate.ToString("d") + " - " + EndDate.ToString("d");
                 App.RecordRepo.AddNewPaymentRecord(SelectedItem, i, FinalDate);
-                
+
                 await GetAllPaymentsAsync();
 
                 StatusMessage = App.RecordRepo.StatusMessage;
@@ -136,7 +132,7 @@ namespace RecordKeepingApp.ViewModels
             try
             {
                 StatusMessage = "";
-                Property property= await App.RecordRepo.GetOneProperty(pageId);
+                Property property = await App.RecordRepo.GetOneProperty(pageId);
                 Name = property.Renter;
                 Address = property.DoorNumber;
                 StatusMessage = string.Format("Found page {0}. Renter's name: {1}", pageId, property.Renter);

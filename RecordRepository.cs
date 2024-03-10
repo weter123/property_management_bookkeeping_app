@@ -51,22 +51,6 @@ namespace RecordKeepingApp.Models
 
         }
 
-        public async Task<List<Payment>> GetAllRecords()
-        {
-            try
-            {
-                Init();
-                return await conn.QueryAsync<Payment>("" +
-                    "SELECT PayerName, PayerAddress, PaymentAmount, PaymentDate, InsertDate FROM Payment ");      
-            }
-            catch (Exception ex)
-            {
-                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
-            }
-
-            return new List<Payment>();
-        }
-
         public async Task<List<PaymentProperty>> GetAllPayments()
         {
             try

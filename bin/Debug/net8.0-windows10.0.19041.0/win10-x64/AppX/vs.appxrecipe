@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-07T02:57:49.594</Modified>
+      <Modified>2024-03-10T02:17:08.818</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-07T02:39:54.858</Modified>
+      <Modified>2024-03-08T03:29:54.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.runtimeconfig.json">
       <PackagePath>RecordKeepingApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-05T03:02:08.070</Modified>
+      <Modified>2024-03-07T21:38:17.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.dll">
       <PackagePath>RecordKeepingApp.dll</PackagePath>
-      <Modified>2024-03-07T02:57:49.314</Modified>
+      <Modified>2024-03-10T02:17:07.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>RecordKeepingApp.exe</PackagePath>
-      <Modified>2024-03-07T02:57:49.318</Modified>
+      <Modified>2024-03-10T02:17:07.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.deps.json">
       <PackagePath>RecordKeepingApp.deps.json</PackagePath>
-      <Modified>2024-03-05T03:02:08.052</Modified>
+      <Modified>2024-03-07T21:38:17.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
