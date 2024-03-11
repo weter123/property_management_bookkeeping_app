@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecordKeepingApp.Views.PropertyDetailsPage"
+             xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
+             x:DataType="viewModel:PropertyDetailsViewModel"
+             Title="{Binding Property.Renter}">
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+                Text="Name: " />
+            <Label 
+                Text="{Binding Property.Renter}" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+                Text="Page: " />
+            <Label 
+                Text="{Binding Property.Page}" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+        Text="Door Number: " />
+            <Label 
+        Text="{Binding Property.DoorNumber}" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+                Text="Property Sequence: " />
+            <Label 
+                Text="{Binding Property.PropertySequence}" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+        Text="Phone Number: " />
+            <Label 
+        Text="{Binding Property.PhoneNumber}" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+        Text="Rental Amount: " />
+            <Label 
+        Text="{Binding Property.RentalAmount}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

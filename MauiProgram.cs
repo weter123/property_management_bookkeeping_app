@@ -3,6 +3,7 @@ using Microsoft.Maui.Hosting;
 using RecordKeepingApp.Models;
 using RecordKeepingApp.ViewModels;
 using CommunityToolkit.Maui;
+using RecordKeepingApp.Views;
 //using RecordKeepingApp.Service;
 namespace RecordKeepingApp
 {
@@ -29,6 +30,8 @@ namespace RecordKeepingApp
             builder.Services.AddTransient<MainViewModel>();
             builder.Services.AddTransient<PropertyListPage>();
             builder.Services.AddTransient<PropertyListViewModel>();
+            builder.Services.AddTransient<PropertyDetailsPage>();
+            builder.Services.AddTransient<PropertyDetailsViewModel>();
 
 #endif
             return builder.Build();

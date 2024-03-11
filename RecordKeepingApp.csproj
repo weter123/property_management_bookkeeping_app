@@ -67,7 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\PropertyListPage.xaml.cs">
+	  <Compile Update="Views\PropertyListPage.xaml.cs">
 	    <DependentUpon>PropertyListPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
@@ -76,7 +76,10 @@
 	  <MauiXaml Update="Components\NavigationMenuBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PropertyListPage.xaml">
+	  <MauiXaml Update="Views\PropertyDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PropertyListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

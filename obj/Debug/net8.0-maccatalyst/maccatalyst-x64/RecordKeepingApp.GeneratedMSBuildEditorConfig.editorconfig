@@ -34,18 +34,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Component
 build_metadata.AdditionalFiles.TargetPath = Components\NavigationMenuBar.xaml
 build_metadata.AdditionalFiles.RelativePath = Components\NavigationMenuBar.xaml
 
-[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Pages/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Pages.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
-
-[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Pages/PropertyListPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Pages.PropertyListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages\PropertyListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages\PropertyListPage.xaml
-
 [C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Resources.Styles.Colors.xaml
@@ -57,3 +45,21 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Views/PropertyDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Views.PropertyDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PropertyDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PropertyDetailsPage.xaml
+
+[C:/Users/repex/Documents/MAUI Projects/RecordKeepingApp/Views/PropertyListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RecordKeepingApp.Views.PropertyListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PropertyListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PropertyListPage.xaml

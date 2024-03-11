@@ -9,7 +9,10 @@
     <MauiXaml Update="Components\NavigationMenuBar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\PropertyListPage.xaml">
+    <MauiXaml Update="Views\PropertyDetailsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\PropertyListPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

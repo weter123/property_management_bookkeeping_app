@@ -37,6 +37,12 @@
         <member name="P:RecordKeepingApp.ViewModels.MainViewModel.SelectedItem">
             <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.selectedItem"/>
         </member>
+        <member name="T:RecordKeepingApp.ViewModels.PropertyDetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.PropertyDetailsViewModel.Property">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyDetailsViewModel.property"/>
+        </member>
         <member name="T:RecordKeepingApp.ViewModels.PropertyListViewModel">
             <inheritdoc/>
         </member>
@@ -214,6 +220,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedItem">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedItem" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Property">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Property" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Page">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Page" generated properties.</summary>
         </member>
@@ -261,6 +270,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedItem">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedItem" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Property">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Property" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Page">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Page" generated properties.</summary>

@@ -15,6 +15,7 @@ namespace RecordKeepingApp.ViewModels
 {
     public partial class MainViewModel : BaseViewModel
     {
+
         public ObservableCollection<PaymentProperty> Payments { get; } = new();
 
         public ObservableCollection<int> PropertyIds { get; } = new();
@@ -50,7 +51,6 @@ namespace RecordKeepingApp.ViewModels
 
         public MainViewModel()
         {
-            
             GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
             AddNewPaymentCommand = new Command(async () => await AddNewPaymentAsync());
             GetPropertyIdsCommand = new Command(async () => await GetAllPropertyIdsAsync());
@@ -62,7 +62,6 @@ namespace RecordKeepingApp.ViewModels
             try
             {
                 StatusMessage = "";
-                //List<Payment> payments = await App.RecordRepo.GetAllRecords();
                 List<PaymentProperty> payments = await App.RecordRepo.GetAllPayments();
                 if (Payments.Count != 0)
                 {
@@ -76,8 +75,7 @@ namespace RecordKeepingApp.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"unable to get properties: {ex.Message}");
-                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+                ErrorHandler.HandleException(ex);
             }
         }
         async Task AddNewPaymentAsync()
@@ -86,7 +84,7 @@ namespace RecordKeepingApp.ViewModels
             try
             {
                 StatusMessage = "";
-                int.TryParse(Amount, out int i);
+                _ = int.TryParse(Amount, out int i);
 
                 FinalDate = StartDate.ToString("d") + " - " + EndDate.ToString("d");
                 App.RecordRepo.AddNewPaymentRecord(SelectedItem, i, FinalDate);
@@ -94,12 +92,10 @@ namespace RecordKeepingApp.ViewModels
                 await GetAllPaymentsAsync();
 
                 StatusMessage = App.RecordRepo.StatusMessage;
-
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"unable to add payment: {ex.Message}");
-                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+                ErrorHandler.HandleException(ex);
             }
         }
 
@@ -122,8 +118,7 @@ namespace RecordKeepingApp.ViewModels
 
             catch (Exception ex)
             {
-                Debug.WriteLine($"unable to get properties: {ex.Message}");
-                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+                ErrorHandler.HandleException(ex);
             }
         }
 
@@ -140,16 +135,22 @@ namespace RecordKeepingApp.ViewModels
 
             catch (Exception ex)
             {
-                Debug.WriteLine($"unable to get properties: {ex.Message}");
-                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+                ErrorHandler.HandleException(ex);
             }
         }
 
         public async Task LoadAsync()
         {
-            await GetAllPaymentsAsync();
-            await GetAllPropertyIdsAsync();
+            try
+            {
+                await GetAllPaymentsAsync();
+                await GetAllPropertyIdsAsync();
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+            }
+
         }
-    }
-    
+    }   
 }

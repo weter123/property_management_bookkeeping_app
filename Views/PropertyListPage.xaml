@@ -8,77 +8,78 @@
              x:DataType="viewModel:PropertyListViewModel"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="Property List">
-    <ScrollView>
-        <StackLayout Margin="10">
-            <menu:NavigationMenuBar />
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
-                <Label Text="Page: "/>
-                <Entry x:Name="page"
+    <StackLayout Margin="10">
+        <menu:NavigationMenuBar />
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+            <Label Text="Page: "/>
+            <Entry x:Name="page"
                    Text="{Binding Page}"
                Placeholder="Enter Page Number"
                MaxLength="250"
                MinimumWidthRequest="500"
             />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-                <Label Text="Door Number: "/>
-                <Entry x:Name="doorNo"
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Door Number: "/>
+            <Entry x:Name="doorNo"
                    Text="{Binding DoorNo}"
                Placeholder="Enter Amount"
                MaxLength="250"
                MinimumWidthRequest="500"
             />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-                <Label Text="Rental Type: "/>
-                <Entry x:Name="type"
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Type: "/>
+            <Entry x:Name="type"
                    Text="{Binding Type}"
                 Placeholder="Enter Rental Type"
                 MaxLength="250"
                 MinimumWidthRequest="500"
             />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-                <Label Text="Renter Name: "/>
-                <Entry x:Name="name"
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Renter Name: "/>
+            <Entry x:Name="name"
                 Text="{Binding Name}"
                 Placeholder="Enter Renter's Name"
                 MaxLength="250"
                 MinimumWidthRequest="500"
             />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-                <Label Text="Rental Sequence: "/>
-                <Entry x:Name="sequence"
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Sequence: "/>
+            <Entry x:Name="sequence"
                 Text="{Binding Sequence}"
                 Placeholder="Enter Rental Sequence"
                 MaxLength="250"
                 MinimumWidthRequest="500"
             />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-                <Label Text="Rental Amount: "/>
-                <Entry x:Name="amount"
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Amount: "/>
+            <Entry x:Name="amount"
                    Text="{Binding Amount}"
                  Placeholder="Enter Rental Amount"
                  MaxLength="250"
                  MinimumWidthRequest="500"
             />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-                <Label Text="Phone Number: "/>
-                <Entry x:Name="phone"
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Phone Number: "/>
+            <Entry x:Name="phone"
                    Text="{Binding Phone}"
                 Placeholder="Enter Phone Number"
                 MaxLength="250"
                 MinimumWidthRequest="500"
                 />
-            </StackLayout>
-            <Button Text="Add Rental Property" x:Name="renterButton"
+        </StackLayout>
+        <Button Text="Add Rental Property" x:Name="renterButton"
                 Command="{Binding AddNewPropertiesCommand}" />
-            <Label x:Name="statusMessage" Text="{Binding StatusMessage}"
+        <Label x:Name="statusMessage" Text="{Binding StatusMessage}"
                 TextColor="{StaticResource Primary}" />
-            <CollectionView x:Name="propertyList" ItemsSource="{Binding Properties}">
+        <ScrollView>
+            <CollectionView x:Name="propertyList" ItemsSource="{Binding Properties}" SelectionMode="Single"
+                SelectionChanged="OnCollectionViewSelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Property">
                         <Grid ColumnDefinitions="*,*,*,*,*,*,*,*">
@@ -94,6 +95,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </StackLayout>
-    </ScrollView>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

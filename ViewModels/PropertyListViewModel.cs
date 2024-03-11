@@ -65,8 +65,7 @@ namespace RecordKeepingApp.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"unable to get properties: {ex.Message}");
-                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+                ErrorHandler.HandleException(ex);
             }
         }
 
@@ -86,14 +85,21 @@ namespace RecordKeepingApp.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"unable to get add propert: {ex.Message}");
-                //await Application.Current.MainPage.DisplayAlert("Error!", ex.Message, "OK");
+                ErrorHandler.HandleException(ex);
             }
         }
 
         public async Task LoadAsync()
         {
-            await GetAllPropertiesAsync();
+            try
+            {
+                await GetAllPropertiesAsync();
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+            }
+            
         }
     }
 }
