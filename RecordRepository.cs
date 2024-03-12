@@ -114,22 +114,6 @@ namespace RecordKeepingApp.Models
             }
 
         }
-/*
-        public async Task<List<Property>> GetAllPropertyIds()
-        {
-            Init();
-            try
-            {
-                return await conn.QueryAsync<Property>("" +
-                    "SELECT page FROM Property ");
-
-            } catch (Exception ex)
-            {
-                StatusMessage = string.Format("Failed to get property Ids. Error: {0}", ex.Message);
-            }
-            return new List<Property> {};
-        }
-*/
         public async Task<Property> GetOneProperty(int pageId)
         {
             Init();
@@ -145,6 +129,24 @@ namespace RecordKeepingApp.Models
                 StatusMessage = string.Format("Failed to find {0}. Error: {1}", pageId, ex.Message);
             }
             return new Property { };
+        }
+
+        public async Task<List<Payment>> GetAllPropertyPayments(int pageId)
+        {
+            try
+            {
+                Init();
+                return await conn.QueryAsync<Payment>("" +
+                    "SELECT PaymentAmount, PaymentDate , InsertDate " +
+                    "FROM Payment " +
+                    "WHERE PropertyPage =" + pageId);
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+
+            return new List<Payment>();
         }
     }
 }

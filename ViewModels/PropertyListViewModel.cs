@@ -45,7 +45,7 @@ namespace RecordKeepingApp.ViewModels
             GetPropertiesCommand = new Command(async () => await GetAllPropertiesAsync());
             AddNewPropertiesCommand = new Command(async () => await AddNewPropertyAsync());
         }
-
+        
         async Task GetAllPropertiesAsync()
         {        
             try

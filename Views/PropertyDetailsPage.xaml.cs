@@ -9,4 +9,10 @@ public partial class PropertyDetailsPage : ContentPage
         BindingContext = vm = propertyDetailsViewModel;
 
     }
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await vm.LoadAsync();
+    }
 }

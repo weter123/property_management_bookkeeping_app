@@ -4,8 +4,11 @@
              x:Class="RecordKeepingApp.Views.PropertyDetailsPage"
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:PropertyDetailsViewModel"
+             xmlns:model ="clr-namespace:RecordKeepingApp.Models"
+             xmlns:menu ="clr-namespace:RecordKeepingApp.Components"
              Title="{Binding Property.Renter}">
     <VerticalStackLayout>
+        <menu:NavigationMenuBar />
         <HorizontalStackLayout>
             <Label 
                 Text="Name: " />
@@ -42,5 +45,17 @@
             <Label 
         Text="{Binding Property.RentalAmount}" />
         </HorizontalStackLayout>
+
+        <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Payment">
+                    <Grid ColumnDefinitions="*,*,*">
+                        <Label Text="{Binding PaymentAmount}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="1" Text="{Binding PaymentDate}" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Column="2" Text="{Binding InsertDate}" TextColor="{StaticResource Primary}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </VerticalStackLayout>
 </ContentPage>

@@ -18,19 +18,5 @@ namespace RecordKeepingApp
             base.OnAppearing(); 
             await vm.LoadAsync(); 
         }
-        /*
-        protected override async void OnNavigatedTo(NavigatedToEventArgs args)
-        {
-            base.OnNavigatedTo(args);
-            List<Payment> records = await App.RecordRepo.GetAllRecords();
-            MainThread.BeginInvokeOnMainThread(() =>
-            {
-                recordList.ItemsSource = records;
-
-            });
-        }
-
-        
-        */
     }
 }
