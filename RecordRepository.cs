@@ -98,12 +98,10 @@ namespace RecordKeepingApp.Models
             {
                 // TODO: Call Init()
                 Init();
-                // basic validation to ensure a name was entered
                 if (string.IsNullOrEmpty(renter))
                     throw new Exception("Valid name required");
 
                 DateTime thisDay = DateTime.Now;
-                // TODO: Insert the new property into the database
                 result = await conn.InsertAsync(new Property { Page = page, DoorNumber = doorNo, PropertyType = type, Renter = renter, PropertySequence = sequence, RentalAmount = amount, PhoneNumber = phoneNo, InsertDate = thisDay });
 
                 StatusMessage = string.Format("{0} property(s) added (page: {1})", result, page);

@@ -25,6 +25,7 @@ namespace RecordKeepingApp.ViewModels
 
         }
 
+        // Task to get all payments for a property
         async Task GetAllPropertyPaymentsAsync()
         {
             try
@@ -46,7 +47,7 @@ namespace RecordKeepingApp.ViewModels
                 ErrorHandler.HandleException(ex);
             }
         }
-
+        // Method to load data into the page
         public async Task LoadAsync()
         {
             try

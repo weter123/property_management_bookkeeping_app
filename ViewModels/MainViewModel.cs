@@ -15,16 +15,19 @@ namespace RecordKeepingApp.ViewModels
 {
     public partial class MainViewModel : BaseViewModel
     {
-
+       
         public ObservableCollection<PaymentProperty> Payments { get; } = new();
 
         public ObservableCollection<int> PropertyIds { get; } = new();
 
-        public Command GetPaymentsCommand { get; }
+        #region Commands
+        public Command GetPaymentsCommand { get; } 
         public Command AddNewPaymentCommand { get; }
         public Command GetPropertyIdsCommand { get; }
         public Command GetSelectedPropertyCommand { get; }
+        #endregion
 
+        #region ObservableProperty
         [ObservableProperty]
         string amount;
 
@@ -49,6 +52,13 @@ namespace RecordKeepingApp.ViewModels
         [ObservableProperty]
         int selectedItem;
 
+        [ObservableProperty]
+        string minimumDate;
+
+        [ObservableProperty]
+        string maximumDate;
+
+        #endregion
         public MainViewModel()
         {
             GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
@@ -57,6 +67,8 @@ namespace RecordKeepingApp.ViewModels
             GetSelectedPropertyCommand = new Command(async () => await GetPropertyAsync(selectedItem));
         }
 
+        #region Tasks
+        // Task that requests list of payments (PaymentProperty objects) to be injected in MainPage's CollectionView
         async Task GetAllPaymentsAsync()
         {
             try
@@ -78,13 +90,34 @@ namespace RecordKeepingApp.ViewModels
                 ErrorHandler.HandleException(ex);
             }
         }
+
+        // Task that pass payment data (provided by user) to be inserted into the SQL Database
         async Task AddNewPaymentAsync()
         {
-
             try
             {
                 StatusMessage = "";
                 _ = int.TryParse(Amount, out int i);
+                if (SelectedItem == 0)
+                {
+                    StatusMessage = "Please select a property";
+                    return;
+                }
+                if (StartDate == DateTime.MinValue)
+                {
+                    StatusMessage = "Please select a start date";
+                    return;
+                }
+                if (EndDate == DateTime.MinValue)
+                {
+                    StatusMessage = "Please select an end date";
+                    return;
+                }
+                if (i <= 0)
+                {
+                    StatusMessage = "Please enter a valid amount";
+                    return;
+                }
 
                 FinalDate = StartDate.ToString("d") + " - " + EndDate.ToString("d");
                 App.RecordRepo.AddNewPaymentRecord(SelectedItem, i, FinalDate);
@@ -99,6 +132,7 @@ namespace RecordKeepingApp.ViewModels
             }
         }
 
+        // Task requests list of property Ids from the database to populate the Picker
         async Task GetAllPropertyIdsAsync()
         {
             try
@@ -122,6 +156,7 @@ namespace RecordKeepingApp.ViewModels
             }
         }
 
+        // Task requests property data matching the selected page Id from the Picker.
         async Task GetPropertyAsync(int pageId)
         {
             try
@@ -139,12 +174,18 @@ namespace RecordKeepingApp.ViewModels
             }
         }
 
+        #endregion 
+
+        // Method that load data when called
         public async Task LoadAsync()
         {
             try
             {
                 await GetAllPaymentsAsync();
                 await GetAllPropertyIdsAsync();
+
+                MinimumDate = new DateTime(2023, 1, 1).ToString("d");
+                MaximumDate = new DateTime(2024, 12, 31).ToString("d");
             }
             catch (Exception ex)
             {

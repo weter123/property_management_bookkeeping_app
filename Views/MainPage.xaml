@@ -49,8 +49,8 @@
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
             <Label Text="Start Date: " x:Name="mainDateLabel"/>
             <DatePicker x:Name="startDate"
-                        MinimumDate="01/01/2024"
-                        MaximumDate="12/31/2026"
+                        MinimumDate="{Binding MinimumDate}"
+                        MaximumDate="{Binding MaximumDate}"
                         Date="{Binding StartDate}"
                         Format="dd/MM/yyyy"
                         
@@ -58,8 +58,8 @@
             <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
                 <Label Text="To: "/>
                 <DatePicker x:Name="endDate"
-                            MinimumDate="01/01/2024"
-                            MaximumDate="12/31/2026"
+                            MinimumDate="{Binding MinimumDate}"
+                            MaximumDate="{Binding MaximumDate}"
                             Date="{Binding EndDate}"
                             Format="dd/MM/yyyy"
                 />
