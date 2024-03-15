@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecordKeepingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbeebe9e075e914639433dc3e0873aac9dfbad7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5c3fbbcdd87efaf9648f8a872ba6b54f160bf7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecordKeepingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecordKeepingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\propertylistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\propertylistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\propertylistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:views\\propertylistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\propertydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\propertydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\recordkeepingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:recordkeepingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\propertylistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\propertylistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\recordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:recordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\propertydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\propertydetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\propertylistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:views\\propertylistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\propertydetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\recordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:recordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\views\\propertydetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,10 +105,6 @@
       "AbsoluteMoniker": "D:0:0:{9AD3418D-74A2-4A75-AE02-A78BE89BD9A5}|..\\RecordKeepingAppTest\\RecordKeepingAppTest.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapptest\\recordkeepingapptest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapp\\recordkeepingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2B60CBF5-70CC-46F9-AD99-7546E1D08E34}|RecordKeepingApp.csproj|solutionrelative:recordkeepingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9AD3418D-74A2-4A75-AE02-A78BE89BD9A5}|..\\RecordKeepingAppTest\\RecordKeepingAppTest.csproj|c:\\users\\repex\\documents\\maui projects\\recordkeepingapptest\\calculationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -124,11 +124,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PropertyDetailsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\ViewModels\\PropertyDetailsViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\PropertyDetailsViewModel.cs",
@@ -141,13 +141,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\MainPage.xaml",
               "RelativeDocumentMoniker": "Views\\MainPage.xaml",
               "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\MainPage.xaml",
               "RelativeToolTip": "Views\\MainPage.xaml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADgAAAAOAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-07T20:44:50.142Z",
               "EditorCaption": ""
@@ -160,27 +160,14 @@
               "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "ViewModels\\MainViewModel.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAswHUAAAAsAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAADwv8UAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T20:54:06.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PropertyListPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyListPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\PropertyListPage.xaml.cs",
-              "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyListPage.xaml.cs",
-              "RelativeToolTip": "Views\\PropertyListPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T19:40:46.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "Models\\Payment.cs",
@@ -192,20 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PropertyListViewModel.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\ViewModels\\PropertyListViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\PropertyListViewModel.cs",
               "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\ViewModels\\PropertyListViewModel.cs",
               "RelativeToolTip": "ViewModels\\PropertyListViewModel.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAAwDkAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T20:54:11.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\ViewModels\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
@@ -213,37 +200,62 @@
               "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T20:55:03.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T20:55:03.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "RecordRepository.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordRepository.cs",
               "RelativeDocumentMoniker": "RecordRepository.cs",
               "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordRepository.cs",
               "RelativeToolTip": "RecordRepository.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAjwIMAAAAvAAAA",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAiwEcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T21:23:08.275Z"
+              "WhenOpened": "2024-03-07T21:23:08.275Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\MainPage.xaml.cs",
               "RelativeToolTip": "Views\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T20:44:52.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecordKeepingApp.csproj",
+              "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordKeepingApp.csproj",
+              "RelativeDocumentMoniker": "RecordKeepingApp.csproj",
+              "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordKeepingApp.csproj",
+              "RelativeToolTip": "RecordKeepingApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-07T20:24:39.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "PropertyListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyListPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PropertyListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyListPage.xaml.cs",
+              "RelativeToolTip": "Views\\PropertyListPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T19:40:46.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PropertyDetailsPage.xaml",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyDetailsPage.xaml",
               "RelativeDocumentMoniker": "Views\\PropertyDetailsPage.xaml",
@@ -255,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PropertyDetailsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyDetailsPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\PropertyDetailsPage.xaml.cs",
@@ -267,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PaymentProperty.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Models\\PaymentProperty.cs",
               "RelativeDocumentMoniker": "Models\\PaymentProperty.cs",
@@ -279,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "PropertyListPage.xaml",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Views\\PropertyListPage.xaml",
               "RelativeDocumentMoniker": "Views\\PropertyListPage.xaml",
@@ -291,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -303,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Error Handler.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Error Handler.cs",
               "RelativeDocumentMoniker": "Error Handler.cs",
@@ -315,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "FileAccessHelper.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\FileAccessHelper.cs",
               "RelativeDocumentMoniker": "FileAccessHelper.cs",
@@ -327,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -339,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -351,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "NavigationMenuBar.xaml.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Components\\NavigationMenuBar.xaml.cs",
               "RelativeDocumentMoniker": "Components\\NavigationMenuBar.xaml.cs",
@@ -363,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -375,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -387,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "NavigationMenuBar.xaml",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Components\\NavigationMenuBar.xaml",
               "RelativeDocumentMoniker": "Components\\NavigationMenuBar.xaml",
@@ -399,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AssertionTest.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingAppTest\\AssertionTest.cs",
               "RelativeDocumentMoniker": "..\\RecordKeepingAppTest\\AssertionTest.cs",
@@ -411,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\Constants.cs",
               "RelativeDocumentMoniker": "Constants.cs",
@@ -423,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "RecordKeepingAppTest.csproj",
               "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingAppTest\\RecordKeepingAppTest.csproj",
               "RelativeDocumentMoniker": "..\\RecordKeepingAppTest\\RecordKeepingAppTest.csproj",
@@ -431,19 +443,8 @@
               "RelativeToolTip": "..\\RecordKeepingAppTest\\RecordKeepingAppTest.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-04T21:38:44.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RecordKeepingApp.csproj",
-              "DocumentMoniker": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordKeepingApp.csproj",
-              "RelativeDocumentMoniker": "RecordKeepingApp.csproj",
-              "ToolTip": "C:\\Users\\repex\\Documents\\MAUI Projects\\RecordKeepingApp\\RecordKeepingApp.csproj",
-              "RelativeToolTip": "RecordKeepingApp.csproj",
-              "ViewState": "AQIAACgAAAAAAAAAAABBwEEAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-07T20:24:39.531Z"
+              "WhenOpened": "2024-03-04T21:38:44.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

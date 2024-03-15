@@ -43,6 +43,9 @@
         <member name="P:RecordKeepingApp.ViewModels.MainViewModel.MaximumDate">
             <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.maximumDate"/>
         </member>
+        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.TotalAmount">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.totalAmount"/>
+        </member>
         <member name="T:RecordKeepingApp.ViewModels.PropertyDetailsViewModel">
             <inheritdoc/>
         </member>
@@ -232,6 +235,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MaximumDate">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MaximumDate" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Property">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Property" generated properties.</summary>
         </member>
@@ -288,6 +294,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MaximumDate">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MaximumDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Property">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Property" generated properties.</summary>

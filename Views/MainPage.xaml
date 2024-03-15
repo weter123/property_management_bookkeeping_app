@@ -9,6 +9,7 @@
              x:DataType="viewModel:MainViewModel">
     <StackLayout Margin="10">
         <menu:NavigationMenuBar />
+        <Label Text="{Binding TotalAmount }"/>
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
             <Label x:Name="primaryEntry" Text="Page: "/>
             <Picker x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">

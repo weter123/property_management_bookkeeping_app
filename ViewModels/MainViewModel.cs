@@ -58,12 +58,15 @@ namespace RecordKeepingApp.ViewModels
         [ObservableProperty]
         string maximumDate;
 
+        [ObservableProperty]
+        int totalAmount;
+
         #endregion
         public MainViewModel()
         {
-            GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
+            //GetPaymentsCommand = new Command(async () => await GetAllPaymentsAsync());
             AddNewPaymentCommand = new Command(async () => await AddNewPaymentAsync());
-            GetPropertyIdsCommand = new Command(async () => await GetAllPropertyIdsAsync());
+            //GetPropertyIdsCommand = new Command(async () => await GetAllPropertyIdsAsync());
             GetSelectedPropertyCommand = new Command(async () => await GetPropertyAsync(selectedItem));
         }
 
@@ -174,6 +177,19 @@ namespace RecordKeepingApp.ViewModels
             }
         }
 
+        async Task GetTotalPaymentAmountAsync()
+        {
+            try
+            {
+                TotalAmount = await App.RecordRepo.GetTotalPaymentAmount();
+            }
+
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+            }
+        }
+
         #endregion 
 
         // Method that load data when called
@@ -183,6 +199,7 @@ namespace RecordKeepingApp.ViewModels
             {
                 await GetAllPaymentsAsync();
                 await GetAllPropertyIdsAsync();
+                await GetTotalPaymentAmountAsync();
 
                 MinimumDate = new DateTime(2023, 1, 1).ToString("d");
                 MaximumDate = new DateTime(2024, 12, 31).ToString("d");

@@ -30,17 +30,17 @@ namespace RecordKeepingApp.Models
             _dbPath = dbPath;
         }
 
+        //Insert a new record into the Payment table
         public async void AddNewPaymentRecord(int page, int amount, String date)
         {
 
             try
             {
-                // TODO: Call Init()
                 Init();
-               
+
                 DateTime thisDay = DateTime.Now;
-                // TODO: Insert the new person into the database
-                await conn.InsertAsync(new Payment { PropertyPage = page , PaymentAmount = amount, PaymentDate = date , InsertDate = thisDay });
+
+                await conn.InsertAsync(new Payment { PropertyPage = page, PaymentAmount = amount, PaymentDate = date, InsertDate = thisDay });
 
                 StatusMessage = string.Format("a record has been added (Page: {0})", page);
             }
@@ -51,6 +51,7 @@ namespace RecordKeepingApp.Models
 
         }
 
+        // Retrieve records of Payment with Property Details from Database and return a list of PaymentProperty objects
         public async Task<List<PaymentProperty>> GetAllPayments()
         {
             try
@@ -68,9 +69,10 @@ namespace RecordKeepingApp.Models
                 StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
             }
 
-            return new List<PaymentProperty>();
+            return [];
         }
 
+        // Retrieve all records from the Property table
         public async Task<List<Property>> GetAllProperties()
         {
             // TODO: Init then retrieve a list of Person objects from the database into a list
@@ -88,9 +90,10 @@ namespace RecordKeepingApp.Models
                 StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
             }
 
-            return new List<Property>();
+            return [];
         }
 
+        // Insert a new record into the Property table
         public async void AddNewProperty(int page, string doorNo, string type, string renter, string sequence, int amount, string phoneNo)
         {
             int result = 0;
@@ -112,6 +115,8 @@ namespace RecordKeepingApp.Models
             }
 
         }
+
+        // Retrieve a single property record from the Property table
         public async Task<Property> GetOneProperty(int pageId)
         {
             Init();
@@ -129,6 +134,7 @@ namespace RecordKeepingApp.Models
             return new Property { };
         }
 
+        // Retrieve all payment records from the Payment table for a specific property
         public async Task<List<Payment>> GetAllPropertyPayments(int pageId)
         {
             try
@@ -144,7 +150,22 @@ namespace RecordKeepingApp.Models
                 StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
             }
 
-            return new List<Payment>();
+            return [];
+        }
+        public async Task<int> GetTotalPaymentAmount()
+        {
+            try
+            {
+                Init();
+                return await conn.ExecuteScalarAsync<int>("" +
+                    "SELECT SUM(PaymentAmount) " +
+                    "FROM Payment ");
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+            return -1;
         }
     }
 }
