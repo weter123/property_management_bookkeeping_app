@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-15T02:00:36.160</Modified>
+      <Modified>2024-03-19T05:06:47.705</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-15T02:00:36.028</Modified>
+      <Modified>2024-03-19T05:04:05.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.runtimeconfig.json">
       <PackagePath>RecordKeepingApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-07T21:38:17.403</Modified>
+      <Modified>2024-03-18T02:58:16.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.dll">
       <PackagePath>RecordKeepingApp.dll</PackagePath>
-      <Modified>2024-03-15T02:00:35.068</Modified>
+      <Modified>2024-03-19T05:06:47.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>RecordKeepingApp.exe</PackagePath>
-      <Modified>2024-03-15T02:00:35.116</Modified>
+      <Modified>2024-03-19T05:06:47.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.611</Modified>
+      <Modified>2024-03-15T03:14:10.842</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.623</Modified>
+      <Modified>2024-03-15T03:14:10.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.637</Modified>
+      <Modified>2024-03-15T03:14:10.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.658</Modified>
+      <Modified>2024-03-15T03:14:10.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.734</Modified>
+      <Modified>2024-03-15T03:14:10.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -287,7 +287,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.deps.json">
       <PackagePath>RecordKeepingApp.deps.json</PackagePath>
-      <Modified>2024-03-11T19:57:40.698</Modified>
+      <Modified>2024-03-18T02:58:16.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
