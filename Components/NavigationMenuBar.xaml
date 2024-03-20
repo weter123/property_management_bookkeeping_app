@@ -5,10 +5,13 @@
 
     <HorizontalStackLayout>
         <Button Text="Main Page" x:Name="MainPageBtn"
-         Clicked="onMainPageButtonClicked" IsVisible="true" Margin="5"/>
+         Clicked="OnMainPageButtonClicked" IsVisible="true" Margin="5"/>
         
         <Button Text="Property List" x:Name="PropertyListBtn"
-                Clicked="onPropertyListButtonClicked" IsVisible="true" Margin="5"/>
+                Clicked="OnPropertyListButtonClicked" IsVisible="true" Margin="5"/>
+
+        <Button Text="Insert Payment" x:Name="InserPaymentBtn"
+        Clicked="OnInsertPaymentButtonClicked" IsVisible="true" Margin="5"/>
     </HorizontalStackLayout>
     
 </ContentView>

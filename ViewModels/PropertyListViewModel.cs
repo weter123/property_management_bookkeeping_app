@@ -88,41 +88,6 @@ namespace RecordKeepingApp.ViewModels
                     StatusMessage = result.message;
                     return;
                 }
-                //if (pageNumber <= 0)
-                //{
-                //    StatusMessage = "Please enter a valid property page";
-                //    return;
-                //}
-                //if (pageNumber <= 0)
-                //{
-                //    StatusMessage = "Please enter a valid amount";
-                //    return;
-                //}
-                //if (string.IsNullOrEmpty(DoorNo))
-                //{
-                //    StatusMessage = "Please insert a door number";
-                //    return;
-                //}
-                //if (string.IsNullOrEmpty(Type))
-                //{
-                //    StatusMessage = "Please insert a type";
-                //    return;
-                //}
-                //if (string.IsNullOrEmpty(Name))
-                //{
-                //    StatusMessage = "Please insert a name";
-                //    return;
-                //}
-                //if (string.IsNullOrEmpty(Sequence))
-                //{
-                //    StatusMessage = "Please insert a sequence";
-                //    return;
-                //}
-                //if (string.IsNullOrEmpty(Phone))
-                //{
-                //    StatusMessage = "Please insert a phone number";
-                //    return;
-                //}
 
                 App.RecordRepo.AddNewProperty(pageNumber, DoorNo, Type, Name, Sequence, amountNumber, Phone);
                 StatusMessage = App.RecordRepo.StatusMessage;

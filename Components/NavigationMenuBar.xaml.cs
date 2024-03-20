@@ -1,4 +1,5 @@
 using RecordKeepingApp.ViewModels;
+using RecordKeepingApp.Views;
 
 namespace RecordKeepingApp.Components;
 
@@ -11,16 +12,22 @@ public partial class NavigationMenuBar : ContentView
         
 	}
 
-    async public void onMainPageButtonClicked(object sender, EventArgs e)
+    async public void OnMainPageButtonClicked(object sender, EventArgs e)
     {
         string n = "///" + nameof(MainPage);
         await Shell.Current.GoToAsync(n);
     }
 
-    async public void onPropertyListButtonClicked(object sender, EventArgs e)
+    async public void OnPropertyListButtonClicked(object sender, EventArgs e)
     {
 
         await Shell.Current.GoToAsync(nameof(PropertyListPage));
+    }
+
+    async public void OnInsertPaymentButtonClicked(object sender, EventArgs e)
+    {
+
+        await Shell.Current.GoToAsync(nameof(InsertPaymentPage));
     }
 
 }

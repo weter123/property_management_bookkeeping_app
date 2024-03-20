@@ -7,69 +7,11 @@
              xmlns:model ="clr-namespace:RecordKeepingApp.Models"
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:MainViewModel">
+    <ScrollView>
     <StackLayout Margin="10">
         <menu:NavigationMenuBar />
         <Label Text="{Binding TotalAmount }"/>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
-            <Label x:Name="primaryEntry" Text="Page: "/>
-            <Picker x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">
-                <Picker.Behaviors>
-                    <toolkit:EventToCommandBehavior
-            EventName="SelectedIndexChanged"
-            Command="{Binding GetSelectedPropertyCommand}"/>
-                </Picker.Behaviors>
-            </Picker>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
-            <Label x:Name="name" Text="Name: "/>
-            <Entry x:Name="newRecord"
-                   Placeholder="Enter name" 
-                   MaxLength="250"
-                   MinimumWidthRequest="500"
-                    Text="{Binding Name}"
-            />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
-            <Label Text="Door Number: "/>
-            <Entry x:Name="newDoorNo"
-                   Placeholder="Enter Door Number"
-                   MaxLength="250"
-                   MinimumWidthRequest="500"
-                    Text="{Binding Address}"
-            />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
-            <Label Text="Payment: " x:Name="amountLabel"/>
-            <Entry x:Name="newAmount"
-                   Placeholder="Enter Amount"
-                   MaxLength="250"
-                   MinimumWidthRequest="500"
-                    Text="{Binding Amount}"
-            />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
-            <Label Text="Start Date: " x:Name="mainDateLabel"/>
-            <DatePicker x:Name="startDate"
-                        MinimumDate="{Binding MinimumDate}"
-                        MaximumDate="{Binding MaximumDate}"
-                        Date="{Binding StartDate}"
-                        Format="dd/MM/yyyy"
-                        
-            />
-            <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
-                <Label Text="To: "/>
-                <DatePicker x:Name="endDate"
-                            MinimumDate="{Binding MinimumDate}"
-                            MaximumDate="{Binding MaximumDate}"
-                            Date="{Binding EndDate}"
-                            Format="dd/MM/yyyy"
-                />
-            </StackLayout>
-        </StackLayout>
-        <Button Text="Add Payment Record" x:Name="paymentButton"
-                Command="{Binding AddNewPaymentCommand}" />
-        <Label x:Name="statusMessage"
-                TextColor="{StaticResource Primary}" Text="{Binding StatusMessage}"/>
+       
         <ScrollView Margin="20">
             <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
                 <CollectionView.ItemTemplate>
@@ -86,5 +28,6 @@
             </CollectionView>
         </ScrollView>
     </StackLayout>
+    </ScrollView>
 
 </ContentPage>

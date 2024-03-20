@@ -10,38 +10,41 @@
         <member name="P:RecordKeepingApp.ViewModels.BaseViewModel.StatusMessage">
             <inheritdoc cref="F:RecordKeepingApp.ViewModels.BaseViewModel.statusMessage"/>
         </member>
-        <member name="T:RecordKeepingApp.ViewModels.MainViewModel">
+        <member name="T:RecordKeepingApp.ViewModels.InsertPaymentViewModel">
             <inheritdoc/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Amount">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.amount"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.Amount">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.amount"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Name">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.name"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.Name">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.name"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Address">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.address"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.Address">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.address"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.StartDate">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.startDate"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.StartDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.startDate"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.EndDate">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.endDate"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.EndDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.endDate"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.FinalDate">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.finalDate"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.FinalDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.finalDate"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.Pages">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.pages"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.Pages">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.pages"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.SelectedItem">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.selectedItem"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.SelectedItem">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.selectedItem"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.MinimumDate">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.minimumDate"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.MinimumDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.minimumDate"/>
         </member>
-        <member name="P:RecordKeepingApp.ViewModels.MainViewModel.MaximumDate">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.maximumDate"/>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.MaximumDate">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.maximumDate"/>
+        </member>
+        <member name="T:RecordKeepingApp.ViewModels.MainViewModel">
+            <inheritdoc/>
         </member>
         <member name="P:RecordKeepingApp.ViewModels.MainViewModel.TotalAmount">
             <inheritdoc cref="F:RecordKeepingApp.ViewModels.MainViewModel.totalAmount"/>
