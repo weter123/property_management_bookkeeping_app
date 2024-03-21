@@ -1,7 +1,7 @@
 # Bookkeeping App
 A BookKeeping desktop app designed for small property managment firm.
 
-## Functional Requirments
+## Current Objectives:
   - [X] User able to use the application without Internet Connection (Offline)
   - [X] User able to view list of transactions
   - [X] able te view total of trnasactions.
@@ -10,8 +10,13 @@ A BookKeeping desktop app designed for small property managment firm.
   - [ ] Able to query payments based on property or renter name.
   - [ ] Able to modify property information.
   - [ ] Able to modify transactions.
+  - [ ] Able to Delete transactions & property information (admin?)
 
-
+## Future objectives
+  - Renter Profiles
+  - Upload Documents
+  - Payment Tracking
+    
 ## Development Log
 2024-03-04: Over the past month, I have been learning how to use .NET Maui and applied what I learned to this project. I have implemented MVVM Pattern to the project and fixed issue with page navigation. the current goal will be to modify the current features with better UI options and setup unit testing before adding new features. 
 
