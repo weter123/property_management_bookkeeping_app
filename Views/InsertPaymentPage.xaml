@@ -7,9 +7,8 @@
              xmlns:model ="clr-namespace:RecordKeepingApp.Models"
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:InsertPaymentViewModel"
-             Title="InsertPaymentPage">
+             Title="Insert Payment">
     <StackLayout Margin="10">
-        <menu:NavigationMenuBar />
         <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
             <Label x:Name="primaryEntry" Text="Page: "/>
             <Picker x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">

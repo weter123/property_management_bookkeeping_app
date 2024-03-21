@@ -8,7 +8,6 @@
              xmlns:menu ="clr-namespace:RecordKeepingApp.Components"
              Title="{Binding Property.Renter}">
     <VerticalStackLayout>
-        <menu:NavigationMenuBar />
         <HorizontalStackLayout>
             <Label 
                 Text="Name: " />

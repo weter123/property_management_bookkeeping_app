@@ -6,28 +6,27 @@
              x:Class="RecordKeepingApp.MainPage"
              xmlns:model ="clr-namespace:RecordKeepingApp.Models"
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
-             x:DataType="viewModel:MainViewModel">
+             x:DataType="viewModel:MainViewModel"
+              Title="Payment List">
     <ScrollView>
-    <StackLayout Margin="10">
-        <menu:NavigationMenuBar />
-        <Label Text="{Binding TotalAmount }"/>
-       
-        <ScrollView Margin="20">
-            <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:PaymentProperty">
-                        <Grid ColumnDefinitions="*,*,*,*,*">
-                            <Label Text="{Binding AddressColumn}" TextColor="{StaticResource Primary}"/>
-                            <Label Grid.Column="1" Text="{Binding NameColumn}" TextColor="{StaticResource Primary}"/>
-                            <Label Grid.Column="2" Text="{Binding AmountColumn}" TextColor="{StaticResource Primary}"/>
-                            <Label Grid.Column="3" Text="{Binding PaymentDateColumn}" TextColor="{StaticResource Primary}"/>
-                            <Label Grid.Column="4" Text="{Binding InsertDateColumn}" TextColor="{StaticResource Primary}"/>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </ScrollView>
-    </StackLayout>
+        <StackLayout Margin="10">
+            <Label Text="{Binding TotalAmount }"/>
+            <ScrollView Margin="20">
+                <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:PaymentProperty">
+                            <Grid ColumnDefinitions="*,*,*,*,*">
+                                <Label Text="{Binding AddressColumn}" TextColor="{StaticResource Primary}"/>
+                                <Label Grid.Column="1" Text="{Binding NameColumn}" TextColor="{StaticResource Primary}"/>
+                                <Label Grid.Column="2" Text="{Binding AmountColumn}" TextColor="{StaticResource Primary}"/>
+                                <Label Grid.Column="3" Text="{Binding PaymentDateColumn}" TextColor="{StaticResource Primary}"/>
+                                <Label Grid.Column="4" Text="{Binding InsertDateColumn}" TextColor="{StaticResource Primary}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>

@@ -5,8 +5,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:RecordKeepingApp"
     Shell.FlyoutBehavior="Disabled"
+    xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
+    x:DataType="viewModel:NavigationViewModel"
     Title="RecordKeepingApp">
 
+    <Shell.MenuBarItems>
+        <MenuBarItem Text="Payment">
+            <MenuFlyoutItem Text="Payments List"
+                            Command="{Binding GoToMainPageCommand}" />
+            <MenuFlyoutItem Text="Insert Payment"
+                            Command="{Binding GoToInsertPaymentPageCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="Property">
+            <MenuFlyoutItem Text="Property List"
+                                Command="{Binding GoToPropertyListPageCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="Renter">
+        </MenuBarItem>
+    </Shell.MenuBarItems>
     <ShellContent
     ContentTemplate="{DataTemplate local:MainPage}"
     Route="MainPage" />
