@@ -43,6 +43,30 @@
         <member name="P:RecordKeepingApp.ViewModels.InsertPaymentViewModel.MaximumDate">
             <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPaymentViewModel.maximumDate"/>
         </member>
+        <member name="T:RecordKeepingApp.ViewModels.InsertPropertyViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.Page">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.page"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.Amount">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.amount"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.DoorNo">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.doorNo"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.Type">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.type"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.Name">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.name"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.Sequence">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.sequence"/>
+        </member>
+        <member name="P:RecordKeepingApp.ViewModels.InsertPropertyViewModel.Phone">
+            <inheritdoc cref="F:RecordKeepingApp.ViewModels.InsertPropertyViewModel.phone"/>
+        </member>
         <member name="T:RecordKeepingApp.ViewModels.MainViewModel">
             <inheritdoc/>
         </member>
@@ -54,30 +78,6 @@
         </member>
         <member name="P:RecordKeepingApp.ViewModels.PropertyDetailsViewModel.Property">
             <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyDetailsViewModel.property"/>
-        </member>
-        <member name="T:RecordKeepingApp.ViewModels.PropertyListViewModel">
-            <inheritdoc/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Page">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.page"/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Amount">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.amount"/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.DoorNo">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.doorNo"/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Type">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.type"/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Name">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.name"/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Sequence">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.sequence"/>
-        </member>
-        <member name="P:RecordKeepingApp.ViewModels.PropertyListViewModel.Phone">
-            <inheritdoc cref="F:RecordKeepingApp.ViewModels.PropertyListViewModel.phone"/>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -238,12 +238,6 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MaximumDate">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MaximumDate" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalAmount">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Property">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Property" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Page">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Page" generated properties.</summary>
         </member>
@@ -258,6 +252,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Phone">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Phone" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Property">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Property" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -298,12 +298,6 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MaximumDate">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MaximumDate" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalAmount">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Property">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Property" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Page">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Page" generated properties.</summary>
         </member>
@@ -318,6 +312,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Phone">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Phone" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Property">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Property" generated properties.</summary>
         </member>
     </members>
 </doc>

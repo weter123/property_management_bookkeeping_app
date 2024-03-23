@@ -2,11 +2,77 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecordKeepingApp.Views.InsertPropertyPage"
+             xmlns:model ="clr-namespace:RecordKeepingApp.Models"
+             xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
+             x:DataType="viewModel:InsertPropertyViewModel"
              Title="InsertPropertyPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+            <Label Text="Page: "/>
+            <Entry x:Name="page"
+             Text="{Binding Page}"
+         Placeholder="Enter Page Number"
+         MaxLength="250"
+         MinimumWidthRequest="500"
+      />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Door Number: "/>
+            <Entry x:Name="doorNo"
+             Text="{Binding DoorNo}"
+         Placeholder="Enter Amount"
+         MaxLength="250"
+         MinimumWidthRequest="500"
+      />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Type: "/>
+            <Entry x:Name="type"
+             Text="{Binding Type}"
+          Placeholder="Enter Rental Type"
+          MaxLength="250"
+          MinimumWidthRequest="500"
+      />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Renter Name: "/>
+            <Entry x:Name="name"
+          Text="{Binding Name}"
+          Placeholder="Enter Renter's Name"
+          MaxLength="250"
+          MinimumWidthRequest="500"
+      />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Sequence: "/>
+            <Entry x:Name="sequence"
+          Text="{Binding Sequence}"
+          Placeholder="Enter Rental Sequence"
+          MaxLength="250"
+          MinimumWidthRequest="500"
+      />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Rental Amount: "/>
+            <Entry x:Name="amount"
+             Text="{Binding Amount}"
+           Placeholder="Enter Rental Amount"
+           MaxLength="250"
+           MinimumWidthRequest="500"
+      />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+            <Label Text="Phone Number: "/>
+            <Entry x:Name="phone"
+             Text="{Binding Phone}"
+          Placeholder="Enter Phone Number"
+          MaxLength="250"
+          MinimumWidthRequest="500"
+          />
+        </StackLayout>
+        <Button Text="Add Rental Property" x:Name="renterButton"
+          Command="{Binding AddNewPropertiesCommand}" />
+        <Label x:Name="statusMessage" Text="{Binding StatusMessage}"
+          TextColor="{StaticResource Primary}" />
     </VerticalStackLayout>
 </ContentPage>

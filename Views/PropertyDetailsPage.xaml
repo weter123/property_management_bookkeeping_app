@@ -5,7 +5,6 @@
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:PropertyDetailsViewModel"
              xmlns:model ="clr-namespace:RecordKeepingApp.Models"
-             xmlns:menu ="clr-namespace:RecordKeepingApp.Components"
              Title="{Binding Property.Renter}">
     <VerticalStackLayout>
         <HorizontalStackLayout>
