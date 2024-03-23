@@ -13,10 +13,13 @@ namespace RecordKeepingApp.ViewModels
         public Command GoToMainPageCommand { get; }
         public Command GoToInsertPaymentPageCommand { get; }
         public Command GoToPropertyListPageCommand { get; }
+
+        public Command GoToInsertPropertyPageCommand { get; }
         public NavigationViewModel() { 
             GoToMainPageCommand = new Command( async () => await GotToMainPageAsync());
             GoToInsertPaymentPageCommand = new Command(async () => await GoToInsertPaymentPageAsync());
             GoToPropertyListPageCommand = new Command(async () => await GoToPropertyListPageAsync());
+            GoToInsertPropertyPageCommand = new Command(async () => await GoToInsertPropertyPageAsync());
         }
 
         async Task GotToMainPageAsync()
@@ -35,6 +38,11 @@ namespace RecordKeepingApp.ViewModels
         {
 
             await Shell.Current.GoToAsync(nameof(PropertyListPage));
+        }
+
+        async Task GoToInsertPropertyPageAsync()
+        {
+            await Shell.Current.GoToAsync(nameof(InsertPropertyPage));
         }
     }
 }

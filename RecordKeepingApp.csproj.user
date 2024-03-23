@@ -12,6 +12,9 @@
     <MauiXaml Update="Views\InsertPaymentPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\InsertPropertyPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\PropertyDetailsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

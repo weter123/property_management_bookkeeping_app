@@ -13,6 +13,7 @@ namespace RecordKeepingApp
             Routing.RegisterRoute(nameof(PropertyListPage), typeof(PropertyListPage));
             Routing.RegisterRoute(nameof(PropertyDetailsPage), typeof(PropertyDetailsPage));
             Routing.RegisterRoute(nameof(InsertPaymentPage), typeof(InsertPaymentPage));
+            Routing.RegisterRoute(nameof(InsertPropertyPage), typeof(InsertPropertyPage));
             BindingContext = this.viewModel = viewModel;
         }
 

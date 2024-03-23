@@ -35,6 +35,9 @@ namespace RecordKeepingApp
             builder.Services.AddTransient<InsertPaymentPage>();
             builder.Services.AddTransient<InsertPaymentViewModel>();
             builder.Services.AddTransient<NavigationViewModel>();
+            builder.Services.AddTransient<InsertPropertyPage>();
+            builder.Services.AddTransient<InsertPropertyViewModel>();
+
 
 #endif
             return builder.Build();

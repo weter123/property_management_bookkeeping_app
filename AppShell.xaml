@@ -19,6 +19,8 @@
         <MenuBarItem Text="Property">
             <MenuFlyoutItem Text="Property List"
                                 Command="{Binding GoToPropertyListPageCommand}" />
+            <MenuFlyoutItem Text="Insert Property"
+                    Command="{Binding GoToInsertPropertyPageCommand}" />
         </MenuBarItem>
         <MenuBarItem Text="Renter">
         </MenuBarItem>
