@@ -14,7 +14,12 @@
             <Setter Property="Margin" Value="0,0,10,0" />
         </Style>
         <Style x:Key="labelDataStyle" TargetType="Label">
-            <Setter Property="FontSize" Value="18" /> 
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="0,0,0,19" />
+        </Style>
+        <Style x:Key="entryPropertyStyle" TargetType="Entry">
+            <Setter Property="MaxLength" Value="250" />
+            <Setter Property="MinimumWidthRequest" Value="150" />
         </Style>
     </ContentPage.Resources>
     <VerticalStackLayout>
@@ -34,23 +39,20 @@
             <Entry
                 Text="{Binding Property.Renter}"
                 IsVisible="{Binding ConfirmVisible}"
-                MaxLength="250"
-                MinimumWidthRequest="500"/>
+                Style="{StaticResource entryPropertyStyle}"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout>
             <Label
                 Text="Page:" 
                 Style="{StaticResource labelLabelStyle}"/>
             <Label
-                Style="{StaticResource labelDataStyle}"
                 Text="{Binding Property.Page}"
-                IsVisible="{Binding UpdateVisible}"
-                Margin="0,0,0,19"/>
+                Style="{StaticResource labelDataStyle}"
+                IsVisible="{Binding UpdateVisible}"/>
             <Entry
                 Text="{Binding Property.Page}"
                 IsVisible="{Binding ConfirmVisible}"
-                MaxLength="250"
-                MinimumWidthRequest="500"/>
+                Style="{StaticResource entryPropertyStyle}"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout>
             <Label
@@ -59,13 +61,11 @@
             <Label 
                 Text="{Binding Property.DoorNumber}" 
                 Style="{StaticResource labelDataStyle}"
-                IsVisible="{Binding UpdateVisible}"
-                Margin="0,0,0,19"/>
+                IsVisible="{Binding UpdateVisible}" />
             <Entry
                 Text="{Binding Property.DoorNumber}"
                 IsVisible="{Binding ConfirmVisible}"
-                MaxLength="250"
-                MinimumWidthRequest="500"/>
+                Style="{StaticResource entryPropertyStyle}"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout>
             <Label 
@@ -74,13 +74,11 @@
             <Label 
                 Text="{Binding Property.PropertySequence}" 
                 Style="{StaticResource labelDataStyle}"
-                IsVisible="{Binding UpdateVisible}"
-                Margin="0,0,0,19"/>
+                IsVisible="{Binding UpdateVisible}"/>
             <Entry
                 Text="{Binding Property.PropertySequence}"
                 IsVisible="{Binding ConfirmVisible}"
-                MaxLength="250"
-                MinimumWidthRequest="500"/>
+                Style="{StaticResource entryPropertyStyle}"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout>
             <Label 
@@ -89,13 +87,11 @@
             <Label 
                 Text="{Binding Property.PhoneNumber}" 
                 Style="{StaticResource labelDataStyle}"
-                IsVisible="{Binding UpdateVisible}"
-                Margin="0,0,0,19"/>
+                IsVisible="{Binding UpdateVisible}"/>
             <Entry
                 Text="{Binding Property.PhoneNumber}" 
                 IsVisible="{Binding ConfirmVisible}"
-                MaxLength="250"
-                MinimumWidthRequest="500"/>
+                Style="{StaticResource entryPropertyStyle}"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout>
             <Label 
@@ -104,13 +100,11 @@
             <Label 
                 Text="{Binding Property.RentalAmount}" 
                 Style="{StaticResource labelDataStyle}"
-                IsVisible="{Binding UpdateVisible}"
-                Margin="0,0,0,19"/>
+                IsVisible="{Binding UpdateVisible}"/>
             <Entry
                 Text="{Binding Property.RentalAmount}" 
                 IsVisible="{Binding ConfirmVisible}"
-                MaxLength="250"
-                MinimumWidthRequest="500"/>
+                Style="{StaticResource entryPropertyStyle}"/>
         </HorizontalStackLayout>
 
         <CollectionView x:Name="recordList" ItemsSource="{Binding Payments}">

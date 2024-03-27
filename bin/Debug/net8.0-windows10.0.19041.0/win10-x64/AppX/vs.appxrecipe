@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-27T01:53:37.400</Modified>
+      <Modified>2024-03-27T23:38:18.458</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-27T01:39:23.299</Modified>
+      <Modified>2024-03-27T23:38:18.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.runtimeconfig.json">
       <PackagePath>RecordKeepingApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-18T02:58:16.374</Modified>
+      <Modified>2024-03-27T23:32:48.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.dll">
       <PackagePath>RecordKeepingApp.dll</PackagePath>
-      <Modified>2024-03-27T01:53:37.004</Modified>
+      <Modified>2024-03-27T23:38:17.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>RecordKeepingApp.exe</PackagePath>
-      <Modified>2024-03-27T01:53:37.009</Modified>
+      <Modified>2024-03-27T23:38:17.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-03-15T03:14:10.842</Modified>
+      <Modified>2024-03-27T23:28:33.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-03-15T03:14:10.852</Modified>
+      <Modified>2024-03-27T23:28:33.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-03-15T03:14:10.865</Modified>
+      <Modified>2024-03-27T23:28:33.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-03-15T03:14:10.884</Modified>
+      <Modified>2024-03-27T23:28:33.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-03-15T03:14:10.960</Modified>
+      <Modified>2024-03-27T23:28:33.819</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -83,211 +83,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-02-07T20:56:32.766</Modified>
+      <Modified>2024-03-27T23:28:34.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.148</Modified>
+      <Modified>2024-03-27T23:28:34.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.169</Modified>
+      <Modified>2024-03-27T23:28:34.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.184</Modified>
+      <Modified>2024-03-27T23:28:34.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.209</Modified>
+      <Modified>2024-03-27T23:28:35.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.302</Modified>
+      <Modified>2024-03-27T23:28:35.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.873</Modified>
+      <Modified>2024-03-27T23:28:34.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.877</Modified>
+      <Modified>2024-03-27T23:28:34.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.897</Modified>
+      <Modified>2024-03-27T23:28:34.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.883</Modified>
+      <Modified>2024-03-27T23:28:34.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.887</Modified>
+      <Modified>2024-03-27T23:28:34.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.840</Modified>
+      <Modified>2024-03-27T23:28:34.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.847</Modified>
+      <Modified>2024-03-27T23:28:34.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.868</Modified>
+      <Modified>2024-03-27T23:28:34.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.853</Modified>
+      <Modified>2024-03-27T23:28:34.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.858</Modified>
+      <Modified>2024-03-27T23:28:34.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.778</Modified>
+      <Modified>2024-03-27T23:28:34.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.784</Modified>
+      <Modified>2024-03-27T23:28:34.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.790</Modified>
+      <Modified>2024-03-27T23:28:34.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.795</Modified>
+      <Modified>2024-03-27T23:28:34.606</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.803</Modified>
+      <Modified>2024-03-27T23:28:34.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.809</Modified>
+      <Modified>2024-03-27T23:28:34.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.814</Modified>
+      <Modified>2024-03-27T23:28:34.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.835</Modified>
+      <Modified>2024-03-27T23:28:34.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.819</Modified>
+      <Modified>2024-03-27T23:28:34.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.824</Modified>
+      <Modified>2024-03-27T23:28:34.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.969</Modified>
+      <Modified>2024-03-27T23:28:34.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.977</Modified>
+      <Modified>2024-03-27T23:28:34.781</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.986</Modified>
+      <Modified>2024-03-27T23:28:34.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.003</Modified>
+      <Modified>2024-03-27T23:28:34.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.028</Modified>
+      <Modified>2024-03-27T23:28:34.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.931</Modified>
+      <Modified>2024-03-27T23:28:34.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.937</Modified>
+      <Modified>2024-03-27T23:28:34.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.943</Modified>
+      <Modified>2024-03-27T23:28:34.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.950</Modified>
+      <Modified>2024-03-27T23:28:34.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.962</Modified>
+      <Modified>2024-03-27T23:28:34.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.902</Modified>
+      <Modified>2024-03-27T23:28:34.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.907</Modified>
+      <Modified>2024-03-27T23:28:34.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.912</Modified>
+      <Modified>2024-03-27T23:28:34.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.917</Modified>
+      <Modified>2024-03-27T23:28:34.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.925</Modified>
+      <Modified>2024-03-27T23:28:34.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.036</Modified>
+      <Modified>2024-03-27T23:28:34.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.047</Modified>
+      <Modified>2024-03-27T23:28:34.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.060</Modified>
+      <Modified>2024-03-27T23:28:34.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.079</Modified>
+      <Modified>2024-03-27T23:28:34.874</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:33.134</Modified>
+      <Modified>2024-03-27T23:28:34.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.767</Modified>
+      <Modified>2024-03-27T23:28:34.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.778</Modified>
+      <Modified>2024-03-27T23:28:34.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.789</Modified>
+      <Modified>2024-03-27T23:28:34.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.804</Modified>
+      <Modified>2024-03-27T23:28:34.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-02-07T20:56:32.857</Modified>
+      <Modified>2024-03-27T23:28:34.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.deps.json">
       <PackagePath>RecordKeepingApp.deps.json</PackagePath>
-      <Modified>2024-03-22T20:00:21.726</Modified>
+      <Modified>2024-03-27T23:38:18.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

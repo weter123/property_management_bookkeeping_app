@@ -8,66 +8,67 @@
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:InsertPaymentViewModel"
              Title="Insert Payment">
-    <StackLayout Margin="10">
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="pageEntry">
+    <ContentPage.Resources>
+        <Style x:Key="layoutEntryStyle" TargetType="HorizontalStackLayout">
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Spacing" Value="10" />
+        </Style>
+        <Style x:Key="entryPaymentStyle" TargetType="Entry">
+            <Setter Property="MaxLength" Value="250" />
+            <Setter Property="MinimumWidthRequest" Value="150" />
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout Margin="10">
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}">
             <Label x:Name="primaryEntry" Text="Page: "/>
             <Picker x:Name ="pagePicker" ItemsSource="{Binding PropertyIds}" SelectedItem="{Binding SelectedItem}">
                 <Picker.Behaviors>
                     <toolkit:EventToCommandBehavior
-         EventName="SelectedIndexChanged"
-         Command="{Binding GetSelectedPropertyCommand}"/>
+                        EventName="SelectedIndexChanged"
+                        Command="{Binding GetSelectedPropertyCommand}"/>
                 </Picker.Behaviors>
             </Picker>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="nameEntry">
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}">
             <Label x:Name="name" Text="Name: "/>
             <Entry x:Name="newRecord"
-                Placeholder="Enter name" 
-                MaxLength="250"
-                MinimumWidthRequest="500"
-                 Text="{Binding Name}"
-         />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+                   Text="{Binding Name}"
+                   Placeholder="Enter name" 
+                   Style="{StaticResource entryPaymentStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}">
             <Label Text="Door Number: "/>
             <Entry x:Name="newDoorNo"
-                Placeholder="Enter Door Number"
-                MaxLength="250"
-                MinimumWidthRequest="500"
-                 Text="{Binding Address}"
-         />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Placeholder="Enter Door Number"
+                   Text="{Binding Address}" 
+                   Style="{StaticResource entryPaymentStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}">
             <Label Text="Payment: " x:Name="amountLabel"/>
             <Entry x:Name="newAmount"
-                Placeholder="Enter Amount"
-                MaxLength="250"
-                MinimumWidthRequest="500"
-                 Text="{Binding Amount}"
-         />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10">
+                   Placeholder="Enter Amount"
+                   Text="{Binding Amount}" 
+                   Style="{StaticResource entryPaymentStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}">
             <Label Text="Start Date: " x:Name="mainDateLabel"/>
             <DatePicker x:Name="startDate"
                      MinimumDate="{Binding MinimumDate}"
                      MaximumDate="{Binding MaximumDate}"
                      Date="{Binding StartDate}"
-                     Format="dd/MM/yyyy"
-                     
-         />
-            <StackLayout Orientation="Horizontal" x:Name="endDateEntry">
+                     Format="dd/MM/yyyy" />
+
                 <Label Text="To: "/>
                 <DatePicker x:Name="endDate"
                          MinimumDate="{Binding MinimumDate}"
                          MaximumDate="{Binding MaximumDate}"
                          Date="{Binding EndDate}"
-                         Format="dd/MM/yyyy"
-             />
-            </StackLayout>
-        </StackLayout>
+                         Format="dd/MM/yyyy" />
+
+        </HorizontalStackLayout>
         <Button Text="Add Payment Record" x:Name="paymentButton"
              Command="{Binding AddNewPaymentCommand}" />
         <Label x:Name="statusMessage"
              TextColor="{StaticResource Primary}" Text="{Binding StatusMessage}"/>
-    </StackLayout>
+    </VerticalStackLayout>
 </ContentPage>

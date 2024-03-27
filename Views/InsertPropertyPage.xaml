@@ -6,70 +6,66 @@
              xmlns:viewModel="clr-namespace:RecordKeepingApp.ViewModels"
              x:DataType="viewModel:InsertPropertyViewModel"
              Title="InsertPropertyPage">
+    <ContentPage.Resources>
+        <Style x:Key="entryPropertyStyle" TargetType="Entry">
+            <Setter Property="MaxLength" Value="250" />
+            <Setter Property="MinimumWidthRequest" Value="150" />
+        </Style>
+        <Style x:Key="layoutEntryStyle" TargetType="HorizontalStackLayout">
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Spacing" Value="10" />
+        </Style>
+    </ContentPage.Resources>
     <VerticalStackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" x:Name="addressEntry">
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}">
             <Label Text="Page: "/>
             <Entry x:Name="page"
-             Text="{Binding Page}"
-         Placeholder="Enter Page Number"
-         MaxLength="250"
-         MinimumWidthRequest="500"
-      />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Text="{Binding Page}"
+                   Placeholder="Enter Page Number"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}" >
             <Label Text="Door Number: "/>
             <Entry x:Name="doorNo"
-             Text="{Binding DoorNo}"
-         Placeholder="Enter Amount"
-         MaxLength="250"
-         MinimumWidthRequest="500"
-      />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Text="{Binding DoorNo}"
+                   Placeholder="Enter Amount"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}" >
             <Label Text="Rental Type: "/>
             <Entry x:Name="type"
-             Text="{Binding Type}"
-          Placeholder="Enter Rental Type"
-          MaxLength="250"
-          MinimumWidthRequest="500"
-      />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Text="{Binding Type}"
+                   Placeholder="Enter Rental Type"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}" >
             <Label Text="Renter Name: "/>
             <Entry x:Name="name"
-          Text="{Binding Name}"
-          Placeholder="Enter Renter's Name"
-          MaxLength="250"
-          MinimumWidthRequest="500"
-      />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Text="{Binding Name}"
+                   Placeholder="Enter Renter's Name"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}" >
             <Label Text="Rental Sequence: "/>
             <Entry x:Name="sequence"
-          Text="{Binding Sequence}"
-          Placeholder="Enter Rental Sequence"
-          MaxLength="250"
-          MinimumWidthRequest="500"
-      />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Text="{Binding Sequence}"
+                   Placeholder="Enter Rental Sequence"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}" >
             <Label Text="Rental Amount: "/>
             <Entry x:Name="amount"
-             Text="{Binding Amount}"
-           Placeholder="Enter Rental Amount"
-           MaxLength="250"
-           MinimumWidthRequest="500"
-      />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" Margin="10" Spacing="10" >
+                   Text="{Binding Amount}"
+                   Placeholder="Enter Rental Amount"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Style="{StaticResource layoutEntryStyle}" >
             <Label Text="Phone Number: "/>
             <Entry x:Name="phone"
-             Text="{Binding Phone}"
-          Placeholder="Enter Phone Number"
-          MaxLength="250"
-          MinimumWidthRequest="500"
-          />
-        </StackLayout>
+                   Text="{Binding Phone}"
+                   Placeholder="Enter Phone Number"
+                   Style="{StaticResource entryPropertyStyle}"/>
+        </HorizontalStackLayout>
         <Button Text="Add Rental Property" x:Name="renterButton"
           Command="{Binding AddNewPropertiesCommand}" />
         <Label x:Name="statusMessage" Text="{Binding StatusMessage}"
