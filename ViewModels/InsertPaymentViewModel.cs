@@ -85,15 +85,15 @@ namespace RecordKeepingApp.ViewModels
         {
             try
             {
-                List<Property> pages = await App.RecordRepo.GetAllProperties();
+                List<Property> properties = await App.RecordRepo.GetAllProperties();
                 if (PropertyIds.Count != 0)
                 {
                     PropertyIds.Clear();
                 }
 
-                foreach (Property page in pages)
+                foreach (Property property in properties)
                 {
-                    PropertyIds.Add(page.Page);
+                    PropertyIds.Add(property.Page);
                 }
             }
 

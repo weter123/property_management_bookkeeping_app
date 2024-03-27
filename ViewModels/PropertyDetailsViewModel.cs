@@ -16,13 +16,20 @@ namespace RecordKeepingApp.ViewModels
         public ObservableCollection<Payment> Payments { get; } = new();
 
         public Command GetPropertyPaymentsCommand { get; }
+        public Command UpdatePropertyCommand { get; }
 
         [ObservableProperty]
         Property property;
 
+        [ObservableProperty]
+        bool updateVisible;
+
+        [ObservableProperty]
+        bool confirmVisible;
+
         public PropertyDetailsViewModel() {
             GetPropertyPaymentsCommand = new Command(async () => await GetAllPropertyPaymentsAsync());
-
+            UpdatePropertyCommand = new Command(async () => await UpdatePropertyAsync());
         }
 
         // Task to get all payments for a property
@@ -47,12 +54,32 @@ namespace RecordKeepingApp.ViewModels
                 ErrorHandler.HandleException(ex);
             }
         }
+        
+        async Task UpdatePropertyAsync()
+        {
+            try { 
+                if (UpdateVisible)
+                {
+                    UpdateVisible = false;
+                    ConfirmVisible = true;
+                } else
+                {
+                    UpdateVisible = true;
+                    ConfirmVisible = false;
+                }
+            }
+            catch (Exception ex) {
+                ErrorHandler.HandleException(ex);
+            }
+        }
         // Method to load data into the page
         public async Task LoadAsync()
         {
             try
             {
                 await GetAllPropertyPaymentsAsync();
+                UpdateVisible = true;
+                ConfirmVisible = false;
             }
             catch (Exception ex)
             {

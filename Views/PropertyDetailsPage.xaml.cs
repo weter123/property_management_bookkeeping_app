@@ -15,4 +15,17 @@ public partial class PropertyDetailsPage : ContentPage
         base.OnAppearing();
         await vm.LoadAsync();
     }
+
+    //private void OnUpdateButtonClicked(object sender, EventArgs e)
+    //{
+    //    updateButton.IsVisible = false;
+    //    confirmButton.IsVisible = true;
+    //}
+
+    //private void OnConfirmButtonClicked(object sender, EventArgs e)
+    //{
+    //    updateButton.IsVisible = true;
+    //    confirmButton.IsVisible = false;
+    //}
+
 }

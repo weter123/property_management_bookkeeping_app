@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-23T21:41:29.682</Modified>
+      <Modified>2024-03-27T01:53:37.400</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-23T21:41:29.545</Modified>
+      <Modified>2024-03-27T01:39:23.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.runtimeconfig.json">
       <PackagePath>RecordKeepingApp.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RecordKeepingApp.dll">
       <PackagePath>RecordKeepingApp.dll</PackagePath>
-      <Modified>2024-03-23T21:41:28.652</Modified>
+      <Modified>2024-03-27T01:53:37.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>RecordKeepingApp.exe</PackagePath>
-      <Modified>2024-03-23T21:41:28.697</Modified>
+      <Modified>2024-03-27T01:53:37.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\repex\Documents\MAUI Projects\RecordKeepingApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
